@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
+@theme {
+  --color-vexa-black: #0B0D12;
+  --color-vexa-card: #121622;
+  --color-vexa-navy: #171B2B;
+  --color-vexa-purple: #7657F6;
+  --color-vexa-blue: #26B8F2;
+  --color-vexa-white: #F4F5FA;
+  --color-vexa-gray: #9298AA;
+  --color-vexa-border: rgba(255, 255, 255, 0.08);
+
+  --font-sora: var(--font-sora), sans-serif;
+  --font-inter: var(--font-inter), sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0B0D12;
+  --foreground: #F4F5FA;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0B0D12;
+  color: #F4F5FA;
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar for tech aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0D12;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2438;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7657F6;
+}
+
+/* Gradient text utilities */
+.text-gradient {
+  background: linear-gradient(135deg, #F4F5FA 20%, #7657F6 60%, #26B8F2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple-blue {
+  background: linear-gradient(135deg, #7657F6 0%, #26B8F2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism and glow effects */
+.glass-panel {
+  background: rgba(23, 27, 43, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel:hover {
+  border-color: rgba(118, 87, 246, 0.3);
+}
+
+.glow-purple {
+  box-shadow: 0 0 35px -5px rgba(118, 87, 246, 0.25);
+}
+
+.glow-blue {
+  box-shadow: 0 0 35px -5px rgba(38, 184, 242, 0.25);
+}
+
+.font-sora {
+  font-family: var(--font-sora), sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter), sans-serif;
 }

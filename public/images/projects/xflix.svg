@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <!-- Rich dark background -->
+    <radialGradient id="xBgGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#2B0508" />
+      <stop offset="60%" stop-color="#120406" />
+      <stop offset="100%" stop-color="#070203" />
+    </radialGradient>
+
+    <!-- Red glossy gradient for badge -->
+    <linearGradient id="redPill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF1A35" />
+      <stop offset="50%" stop-color="#D90429" />
+      <stop offset="100%" stop-color="#A00018" />
+    </linearGradient>
+
+    <!-- Drop shadow for huge logo -->
+    <filter id="xDropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#E60026" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Full bleed Background filling 100% -->
+  <rect width="800" height="480" fill="url(#xBgGlow)" />
+
+  <!-- Subtle ambient lines -->
+  <g opacity="0.04" stroke="#FFFFFF" stroke-width="1.5">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="240" x2="800" y2="240" />
+    <line x1="0" y1="380" x2="800" y2="380" />
+  </g>
+
+  <!-- Top bar status badge -->
+  <g transform="translate(40, 35)">
+    <rect width="84" height="26" rx="6" fill="#D90429" fill-opacity="0.25" stroke="#D90429" stroke-width="1" />
+    <text x="42" y="18" font-family="'Arial Black', 'Inter', sans-serif" font-weight="900" font-size="12" fill="#FF4D6D" text-anchor="middle">ADULT +18</text>
+  </g>
+
+  <g transform="translate(680, 35)">
+    <rect width="80" height="26" rx="6" fill="#0D0D14" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.12" />
+    <circle cx="16" cy="13" r="4" fill="#22C55E" />
+    <text x="48" y="17" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#F4F5FA" text-anchor="middle">HD LIVE</text>
+  </g>
+
+  <!-- ICONIC XVIDEOS STYLE LOGO (HUGE, FILLING THE ENTIRE CENTER AREA) -->
+  <g transform="translate(400, 240)" filter="url(#xDropShadow)">
+    
+    <!-- White 'X' letter (Huge bold, exact iconic styling) -->
+    <text x="-135" y="42" font-family="'Arial Black', 'Helvetica Black', 'Impact', sans-serif" font-weight="900" font-size="140" fill="#FFFFFF" text-anchor="middle" letter-spacing="-2">
+      X
+    </text>
+
+    <!-- Red Pill / Box for 'VIDEOS' filling width -->
+    <rect x="-45" y="-72" width="370" height="124" rx="22" fill="url(#redPill)" stroke="#FF4D6D" stroke-width="2" stroke-opacity="0.5" />
+    
+    <!-- White 'VIDEOS' inside the red box -->
+    <text x="140" y="26" font-family="'Arial Black', 'Helvetica Black', 'Impact', sans-serif" font-weight="900" font-size="82" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+      VIDEOS
+    </text>
+
+  </g>
+
+  <!-- Bottom Subtitle Bar filling width -->
+  <g transform="translate(400, 410)">
+    <text x="0" y="0" font-family="'Arial Black', 'Inter', sans-serif" font-weight="800" font-size="14" fill="#E2E8F0" text-anchor="middle" letter-spacing="6" opacity="0.85">
+      XFLIX MZ • STREAMING ADULTO EM ALTA DEFINIÇÃO
+    </text>
+  </g>
+</svg>
