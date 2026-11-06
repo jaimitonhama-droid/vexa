@@ -4,37 +4,37 @@ import { ArrowUpRight, Mail, Globe, Code2, ShieldCheck, Sparkles, MessageSquare,
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0B0D12] border-t border-white/[0.08] relative overflow-hidden">
-      {/* Subtle top glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-[#7657F6]/50 to-transparent pointer-events-none" />
+    <footer className="bg-[#08090A] border-t border-white/[0.08] relative overflow-hidden">
+      {/* Subtle top divider line */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-white/[0.1] to-transparent pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-16 pb-8 sm:pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-8 mb-8 sm:mb-12">
           {/* Brand Column (2 cols wide on lg) */}
           <div className="lg:col-span-2 space-y-5">
             <Link href="/" className="flex items-center gap-3 inline-block">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#7657F6] to-[#26B8F2] flex items-center justify-center p-[1px] shadow-lg shadow-[#7657F6]/20 overflow-hidden">
-                <div className="w-full h-full bg-[#0B0D12] rounded-[11px] flex items-center justify-center overflow-hidden p-1">
+              <div className="w-10 h-10 rounded-xl bg-[#141518] border border-white/[0.12] flex items-center justify-center p-[2px] shadow-sm overflow-hidden">
+                <div className="w-full h-full bg-[#0C0D0E] rounded-[10px] flex items-center justify-center overflow-hidden p-1">
                   <Image
                     src="/images/vexa-logo.png"
                     alt="VEXA Technology Group Logo"
-                    width={36}
-                    height={36}
+                    width={34}
+                    height={34}
                     className="w-full h-full object-contain"
                   />
                 </div>
               </div>
               <div className="flex flex-col">
-                <span className="font-sora font-bold text-xl tracking-wider text-[#F4F5FA]">
+                <span className="font-sora font-bold text-lg tracking-wider text-[#F8FAFC]">
                   VEXA
                 </span>
-                <span className="text-[10px] tracking-widest uppercase text-[#9298AA] font-inter -mt-1 font-medium">
+                <span className="text-[9px] tracking-[0.25em] uppercase text-[#94A3B8] font-inter -mt-1 font-semibold">
                   Technology Group
                 </span>
               </div>
             </Link>
 
-            <p className="text-[#9298AA] text-sm leading-relaxed max-w-sm">
+            <p className="text-[#94A3B8] text-xs sm:text-sm leading-relaxed max-w-sm">
               Construímos tecnologia para transformar ideias em realidade. Desenvolvemos produtos digitais,
               plataformas e soluções tecnológicas que ajudam pessoas e empresas a evoluir.
             </p>
@@ -45,14 +45,14 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp VEXA"
-                className="w-9 h-9 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all"
+                className="w-9 h-9 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all"
               >
                 <Phone className="w-4 h-4" />
               </a>
               <Link
                 href="/contactos"
                 aria-label="Contactar VEXA"
-                className="w-9 h-9 rounded-lg bg-[#171B2B] border border-white/[0.08] flex items-center justify-center text-[#9298AA] hover:text-[#7657F6] hover:border-[#7657F6]/30 transition-all"
+                className="w-9 h-9 rounded-full bg-[#141518] border border-white/[0.08] flex items-center justify-center text-[#94A3B8] hover:text-white hover:border-white/[0.25] transition-all"
               >
                 <Mail className="w-4 h-4" />
               </Link>
@@ -102,7 +102,7 @@ export default function Footer() {
               <li>
                 <Link href="/produtos/vyron" className="text-[#9298AA] hover:text-white transition-colors flex items-center gap-1.5">
                   <span>VYRON</span>
-                  <span className="text-[10px] uppercase font-semibold px-1.5 py-0.5 rounded bg-[#7657F6]/20 text-[#7657F6] border border-[#7657F6]/30">
+                  <span className="text-[10px] uppercase font-semibold px-1.5 py-0.5 rounded bg-blue-500/15 text-blue-400 border border-blue-500/30">
                     SaaS
                   </span>
                 </Link>

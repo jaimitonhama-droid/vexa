@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { FolderGit2, Sparkles, Layers } from "lucide-react";
+import { FolderGit2 } from "lucide-react";
 import ProjectsGallery from "./ProjectsGallery";
 
 export const metadata: Metadata = {
@@ -11,55 +11,57 @@ export const metadata: Metadata = {
 
 export default function ProjetosPage() {
   return (
-    <div className="flex flex-col w-full overflow-hidden">
+    <div className="flex flex-col w-full overflow-hidden bg-[#0C0D0E]">
       
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-28 overflow-hidden bg-[#0B0D12]">
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-gradient-to-tr from-[#7657F6]/20 via-[#26B8F2]/15 to-transparent rounded-full blur-[140px] pointer-events-none -z-10" />
-
+      <section className="relative py-16 sm:py-24 overflow-hidden border-b border-white/[0.06]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#171B2B] border border-white/[0.08] text-xs font-semibold text-[#26B8F2] tracking-wider uppercase">
-              <FolderGit2 className="w-3.5 h-3.5" />
-              <span>Projetos & Portfólio</span>
+          <div className="text-center max-w-3xl mx-auto space-y-5">
+            <div className="inline-flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
+              <span className="w-8 h-[1px] bg-white/20" />
+              <span className="flex items-center gap-1.5 text-blue-400">
+                <FolderGit2 className="w-3.5 h-3.5" />
+                Projetos & Portfólio
+              </span>
+              <span className="w-8 h-[1px] bg-white/20" />
             </div>
 
-            <h1 className="font-sora text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#F4F5FA] tracking-tight leading-tight">
+            <h1 className="font-sora text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
               Projetos que transformam ideias em <br className="hidden sm:inline" />
-              <span className="text-gradient">experiências digitais.</span>
+              <span className="text-gradient-silver">experiências digitais.</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-[#9298AA] leading-relaxed font-inter">
+            <p className="text-sm sm:text-lg text-slate-400 leading-relaxed font-inter">
               Conheça as soluções, websites, aplicações e plataformas demonstrativas que exemplificam o padrão visual, arquitetural e tecnológico do VEXA Technology Group.
             </p>
 
-            <div className="inline-block p-3 rounded-2xl bg-[#171B2B]/60 border border-white/[0.08] text-xs text-[#9298AA]">
-              Todos os projetos apresentados foram desenhados com princípios de código limpo, design contemporâneo e escalabilidade comprovada.
+            <div className="inline-block p-3 rounded-2xl bg-[#141518] border border-white/[0.08] text-xs text-slate-400">
+              Todos os projetos apresentados foram desenhados com princípios de engenharia limpa, design contemporâneo e velocidade de execução.
             </div>
           </div>
         </div>
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 relative bg-[#0B0D12] border-t border-white/[0.06]">
+      <section className="py-14 sm:py-20 relative border-b border-white/[0.06]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ProjectsGallery />
         </div>
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-20 relative bg-[#0B0D12] border-t border-white/[0.06]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <h2 className="font-sora text-3xl sm:text-4xl font-bold text-[#F4F5FA]">
+      <section className="py-16 sm:py-20 relative">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+          <h2 className="font-sora text-2xl sm:text-4xl font-bold text-white">
             Gostou de algum dos nossos conceitos ou quer algo sob medida?
           </h2>
-          <p className="text-[#9298AA] text-base max-w-xl mx-auto">
+          <p className="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
             Podemos personalizar qualquer uma dessas soluções para a sua marca ou desenvolver um projeto exclusivo do zero.
           </p>
           <div className="pt-2">
             <Link
               href="/orcamento"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-[#7657F6] to-[#26B8F2] shadow-xl shadow-[#7657F6]/30 hover:opacity-95 transition-all"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-semibold text-black bg-white hover:bg-slate-200 shadow-xl transition-all"
             >
               <span>Solicitar Orçamento</span>
             </Link>
@@ -70,4 +72,3 @@ export default function ProjetosPage() {
     </div>
   );
 }
-

@@ -7,23 +7,22 @@ export default function PortfolioSection() {
   const showcaseProjects = projectsData.slice(0, 4);
 
   return (
-    <section id="projetos" className="py-14 sm:py-20 relative overflow-hidden bg-[#0B0D12]">
-      {/* Background glow */}
-      <div className="absolute top-1/4 right-10 w-80 h-80 bg-[#26B8F2]/10 rounded-full blur-[140px] pointer-events-none -z-10" />
-
+    <section id="projetos" className="py-14 sm:py-20 relative overflow-hidden bg-[#0C0D0E] border-t border-white/[0.06]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-12">
           <div className="max-w-2xl space-y-3">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#171B2B] border border-white/[0.08] text-xs font-semibold text-[#26B8F2] tracking-wider uppercase">
-              <FolderGit2 className="w-3.5 h-3.5" />
-              <span>Portfólio & Soluções Desenvolvidas</span>
+            <div className="inline-flex items-center gap-2.5">
+              <span className="w-5 h-[1px] bg-white/20" />
+              <span className="text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-[#94A3B8] font-inter">
+                Portfólio & Casos Reais
+              </span>
             </div>
-            <h2 className="font-sora text-2xl sm:text-4xl font-extrabold text-[#F4F5FA] tracking-tight">
+            <h2 className="font-sora text-2xl sm:text-4xl font-extrabold text-[#F8FAFC] tracking-tight">
               Projetos que transformam ideias em experiências digitais.
             </h2>
-            <p className="text-[#9298AA] text-sm sm:text-base leading-relaxed font-inter">
+            <p className="text-[#94A3B8] text-sm sm:text-base leading-relaxed font-inter">
               Conheça as nossas plataformas reais e websites operacionais com tecnologia de ponta e foco no utilizador.
             </p>
           </div>
@@ -31,10 +30,10 @@ export default function PortfolioSection() {
           <div className="hidden sm:block">
             <Link
               href="/projetos"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold text-[#F4F5FA] bg-[#171B2B] border border-white/[0.08] hover:border-white/[0.2] hover:bg-[#1f2438] transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-[#F8FAFC] bg-[#141518] border border-white/[0.1] hover:border-white/[0.25] hover:bg-[#1A1B20] transition-all"
             >
               <span>Ver Galeria Completa</span>
-              <ArrowUpRight className="w-4 h-4 text-[#26B8F2]" />
+              <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
           </div>
         </div>
@@ -47,14 +46,14 @@ export default function PortfolioSection() {
             return (
               <div
                 key={project.id}
-                className={`w-[80vw] max-w-[300px] sm:w-auto sm:max-w-none shrink-0 snap-center group relative rounded-2xl bg-[#171B2B]/70 border overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-black/70 flex flex-col justify-between ${
+                className={`w-[80vw] max-w-[300px] sm:w-auto sm:max-w-none shrink-0 snap-center group relative rounded-2xl bg-[#141518] border overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black flex flex-col justify-between ${
                   isRealProject
-                    ? "border-emerald-500/30 hover:border-emerald-400/60 ring-1 ring-emerald-500/20"
-                    : "border-white/[0.08] hover:border-[#7657F6]/40"
+                    ? "border-emerald-500/30 hover:border-emerald-400/50"
+                    : "border-white/[0.08] hover:border-white/[0.2]"
                 }`}
               >
                 {/* Project Visual Preview Thumbnail - Compact balanced height */}
-                <div className="relative h-36 sm:h-44 w-full bg-[#0B0D12] overflow-hidden flex items-center justify-center border-b border-white/[0.06]">
+                <div className="relative h-36 sm:h-44 w-full bg-[#0C0D0E] overflow-hidden flex items-center justify-center border-b border-white/[0.06]">
                   
                   {project.imageUrl ? (
                     <div className="relative w-full h-full">
@@ -64,12 +63,11 @@ export default function PortfolioSection() {
                         fill
                         className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0B0D12]/60 via-transparent to-transparent pointer-events-none" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0C0D0E]/80 via-transparent to-transparent pointer-events-none" />
                     </div>
                   ) : (
                     <>
-                      <div className={`absolute -inset-10 bg-gradient-to-br ${project.accent} opacity-20 blur-2xl group-hover:opacity-35 transition-opacity duration-500`} />
-                      <div className="relative z-10 w-full max-w-[200px] rounded-lg bg-[#171B2B] border border-white/[0.1] shadow-lg p-3">
+                      <div className="relative z-10 w-full max-w-[200px] rounded-lg bg-[#141518] border border-white/[0.1] shadow-lg p-3">
                         <div className="flex items-center gap-1 mb-2">
                           <div className="w-1.5 h-1.5 rounded-full bg-white/20" />
                           <div className="w-1.5 h-1.5 rounded-full bg-white/20" />
@@ -85,7 +83,7 @@ export default function PortfolioSection() {
                     className={`absolute top-2.5 right-2.5 z-20 text-[9px] font-mono font-medium px-2 py-0.5 rounded-full backdrop-blur-md shadow-md border ${
                       isRealProject
                         ? "bg-emerald-950/80 text-emerald-400 border-emerald-500/40"
-                        : "bg-[#0B0D12]/80 text-[#9298AA] border-white/[0.08]"
+                        : "bg-[#0C0D0E]/80 text-[#94A3B8] border-white/[0.08]"
                     }`}
                   >
                     {project.tag}
@@ -96,19 +94,19 @@ export default function PortfolioSection() {
                 <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
                   <div>
                     <div className="flex items-center justify-between gap-1 mb-1.5">
-                      <span className="text-[10px] font-semibold text-[#26B8F2] font-mono uppercase tracking-wider">
+                      <span className="text-[10px] font-semibold text-blue-400 font-mono uppercase tracking-wider">
                         {project.category}
                       </span>
-                      <span className="text-[10px] font-mono text-[#9298AA]">
+                      <span className="text-[10px] font-mono text-[#94A3B8]">
                         {project.division}
                       </span>
                     </div>
 
-                    <h3 className="font-sora text-sm sm:text-base font-bold text-[#F4F5FA] group-hover:text-white transition-colors line-clamp-1">
+                    <h3 className="font-sora text-sm sm:text-base font-bold text-[#F8FAFC] group-hover:text-white transition-colors line-clamp-1">
                       {project.title}
                     </h3>
 
-                    <p className="text-xs text-[#9298AA] leading-relaxed font-inter line-clamp-2 mt-1">
+                    <p className="text-xs text-[#94A3B8] leading-relaxed font-inter line-clamp-2 mt-1">
                       {project.description}
                     </p>
                   </div>
@@ -120,7 +118,7 @@ export default function PortfolioSection() {
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-600/20 transition-all"
+                        className="w-full inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-full text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-600/20 transition-all"
                       >
                         <span>Visitar Site ao Vivo</span>
                         <ExternalLink className="w-3 h-3" />
@@ -128,7 +126,7 @@ export default function PortfolioSection() {
                     ) : (
                       <Link
                         href={`/projetos#${project.id}`}
-                        className="w-full inline-flex items-center justify-center gap-1 py-2 px-3 rounded-xl text-xs font-semibold text-[#F4F5FA] bg-[#0B0D12] border border-white/[0.08] hover:border-white/[0.2] transition-colors"
+                        className="w-full inline-flex items-center justify-center gap-1 py-2 px-3 rounded-full text-xs font-semibold text-[#F8FAFC] bg-[#0C0D0E] border border-white/[0.08] hover:border-white/[0.2] transition-colors"
                       >
                         <span>Visualizar Detalhes</span>
                         <ArrowUpRight className="w-3 h-3" />
@@ -143,13 +141,13 @@ export default function PortfolioSection() {
 
         {/* Mobile Carousel Swipe Indicator & Full Gallery Link */}
         <div className="flex sm:hidden items-center justify-between pt-3 px-1">
-          <span className="text-[11px] text-[#9298AA] flex items-center gap-1">
+          <span className="text-[11px] text-slate-400 flex items-center gap-1">
             <span>Deslize para o lado</span>
-            <span className="text-[#26B8F2]">→</span>
+            <span className="text-blue-400">→</span>
           </span>
           <Link
             href="/projetos"
-            className="text-xs font-semibold text-[#26B8F2] hover:underline flex items-center gap-1"
+            className="text-xs font-semibold text-blue-400 hover:underline flex items-center gap-1"
           >
             <span>Ver todos</span>
             <ArrowUpRight className="w-3.5 h-3.5" />

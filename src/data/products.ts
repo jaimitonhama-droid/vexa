@@ -65,7 +65,7 @@ export const productsData: Product[] = [
       "Solução completa de portal educacional e e-commerce de infoprodutos já em funcionamento. Permite cadastrar cursos em vídeo, livros físicos e digitais com pagamentos instantâneos via e-M-Pesa e painel de controlo completo.",
     priceLabel: "Plataforma Completa Turnkey",
     priceValue: "Sob Consulta",
-    accentColor: "from-amber-400 via-[#7657F6] to-[#26B8F2]",
+    accentColor: "from-blue-600 to-sky-400",
     demoUrl: "https://wandra-cursos.vercel.app/",
     features: [
       "Venda e entrega automatizada de livros digitais e e-books",
@@ -99,7 +99,7 @@ export const productsData: Product[] = [
       "Modelo completo de loja virtual já em funcionamento para marcas de roupas, calçados e acessórios. Permite expor peças com fotos atraentes, tabela de preços em Meticais (MT) e envio de pedidos direto para o WhatsApp do lojista.",
     priceLabel: "Loja Completa Turnkey",
     priceValue: "Sob Consulta",
-    accentColor: "from-pink-500 via-[#7657F6] to-amber-400",
+    accentColor: "from-rose-500 to-amber-500",
     demoUrl: "https://lara-fashion.vercel.app/",
     features: [
       "Catálogo elegante organizado por categorias (roupas, sapatilhas, etc.)",
@@ -167,7 +167,7 @@ export const productsData: Product[] = [
       "Uma plataforma de gestão pessoal desenvolvida para ajudar os utilizadores a organizar tarefas, objetivos e atividades num único lugar, com foco na clareza mental e na execução consistente.",
     priceLabel: "Subscrição SaaS",
     priceValue: "Acesso Antecipado",
-    accentColor: "from-[#7657F6] to-[#26B8F2]",
+    accentColor: "from-blue-600 to-sky-400",
     isFlagship: true,
     features: [
       "Planeamento diário inteligente com timeline visual",

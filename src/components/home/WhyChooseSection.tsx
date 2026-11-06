@@ -6,14 +6,14 @@ const pillars = [
     title: "Inovação",
     description: "Procuramos novas formas de resolver problemas, combinando as mais recentes tecnologias e metodologias para criar soluções com diferenciação real.",
     icon: Lightbulb,
-    accent: "text-[#7657F6] border-[#7657F6]/30 bg-[#7657F6]/10",
+    accent: "text-blue-400 border-blue-500/30 bg-blue-500/10",
   },
   {
     number: "02",
     title: "Qualidade",
     description: "Valorizamos cada detalhe das nossas soluções. Do código limpo à arquitetura e ao acabamento de interface, a excelência não é negociável.",
     icon: ShieldCheck,
-    accent: "text-[#26B8F2] border-[#26B8F2]/30 bg-[#26B8F2]/10",
+    accent: "text-sky-400 border-sky-400/30 bg-sky-400/10",
   },
   {
     number: "03",
@@ -33,22 +33,23 @@ const pillars = [
 
 export default function WhyChooseSection() {
   return (
-    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0B0D12]">
-      {/* Background glow */}
-      <div className="absolute top-1/2 left-10 w-96 h-96 bg-[#7657F6]/10 rounded-full blur-[150px] pointer-events-none -z-10" />
-
+    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0C0D0E] border-t border-white/[0.06]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-10 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#171B2B] border border-white/[0.08] text-xs font-semibold text-[#7657F6] tracking-wider uppercase">
-            <span>Os Nossos Pilares</span>
+          <div className="inline-flex items-center justify-center gap-2.5">
+            <span className="w-5 h-[1px] bg-white/20" />
+            <span className="text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-[#94A3B8] font-inter">
+              Os Nossos Pilares
+            </span>
+            <span className="w-5 h-[1px] bg-white/20" />
           </div>
-          <h2 className="font-sora text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#F4F5FA] tracking-tight">
+          <h2 className="font-sora text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#F8FAFC] tracking-tight">
             Pensamos no futuro. <br className="hidden sm:inline" />
             <span className="text-gradient">Desenvolvemos para o presente.</span>
           </h2>
-          <p className="text-[#9298AA] text-sm sm:text-base leading-relaxed font-inter">
+          <p className="text-[#94A3B8] text-sm sm:text-base leading-relaxed font-inter">
             Acreditamos que a tecnologia deve servir pessoas e empresas com elegância, segurança e resultados mensuráveis.
           </p>
         </div>
@@ -60,34 +61,34 @@ export default function WhyChooseSection() {
             return (
               <div
                 key={pillar.number}
-                className="group relative rounded-2xl bg-[#171B2B]/70 border border-white/[0.08] p-4 sm:p-7 hover:border-white/[0.2] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/60 flex flex-col justify-between"
+                className="group relative rounded-2xl bg-[#141518] border border-white/[0.08] p-4 sm:p-7 hover:border-white/[0.2] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black flex flex-col justify-between"
               >
                 <div>
                   {/* Top Bar with Number and Icon */}
                   <div className="flex items-center justify-between mb-4 sm:mb-8">
-                    <span className="font-mono text-base sm:text-2xl font-bold text-white/20 group-hover:text-white/40 transition-colors">
+                    <span className="font-mono text-base sm:text-2xl font-bold text-white/30 group-hover:text-white/60 transition-colors">
                       {pillar.number}
                     </span>
-                    <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-xl border flex items-center justify-center ${pillar.accent}`}>
-                      <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl border border-white/[0.1] bg-white/[0.04] text-white flex items-center justify-center">
+                      <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#F8FAFC]" />
                     </div>
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-sora text-sm sm:text-xl font-bold text-[#F4F5FA] mb-2 sm:mb-3 group-hover:text-white transition-colors">
+                  <h3 className="font-sora text-sm sm:text-xl font-bold text-[#F8FAFC] mb-2 sm:mb-3 group-hover:text-white transition-colors">
                     {pillar.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-[#9298AA] text-xs sm:text-sm leading-relaxed font-inter line-clamp-3 sm:line-clamp-none">
+                  <p className="text-[#94A3B8] text-xs sm:text-sm leading-relaxed font-inter line-clamp-3 sm:line-clamp-none">
                     {pillar.description}
                   </p>
                 </div>
 
                 {/* Subtle bottom indicator */}
-                <div className="mt-4 sm:mt-8 pt-3 border-t border-white/[0.04] flex items-center gap-1.5 sm:gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#7657F6]" />
-                  <span className="text-[10px] sm:text-[11px] font-mono text-[#9298AA]">Pilar Fundamental</span>
+                <div className="mt-4 sm:mt-8 pt-3 border-t border-white/[0.06] flex items-center gap-1.5 sm:gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                  <span className="text-[10px] sm:text-[11px] font-mono text-[#94A3B8]">Pilar Fundamental</span>
                 </div>
               </div>
             );

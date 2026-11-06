@@ -35,7 +35,7 @@ const services = [
       "Código limpo, seguro e estruturado para escalabilidade",
     ],
     process: "Briefing estratégico → Design UI/UX moderno → Desenvolvimento ágil → Testes de performance e publicação.",
-    accent: "text-[#26B8F2] border-[#26B8F2]/20 bg-[#26B8F2]/10",
+    accent: "text-blue-400 border-blue-400/20 bg-blue-400/10",
   },
   {
     id: "desenvolvimento-aplicacoes",
@@ -51,7 +51,7 @@ const services = [
       "Gestão de estados eficiente e alta estabilidade de execução",
     ],
     process: "Levantamento de requisitos → Arquitetura de software → Desenvolvimento em sprints → Testes e homologação.",
-    accent: "text-[#7657F6] border-[#7657F6]/20 bg-[#7657F6]/10",
+    accent: "text-sky-400 border-sky-400/20 bg-sky-400/10",
   },
   {
     id: "lojas-virtuais",
@@ -99,7 +99,7 @@ const services = [
       "Alta segurança e isolamento de dados de utilizadores",
     ],
     process: "Conceção do ecossistema → Prototipagem → Desenvolvimento dos módulos → Auditoria de segurança.",
-    accent: "text-purple-400 border-purple-400/20 bg-purple-400/10",
+    accent: "text-indigo-400 border-indigo-400/20 bg-indigo-400/10",
   },
   {
     id: "consultoria-tecnologica",
@@ -131,58 +131,53 @@ const services = [
       "Canal direto de suporte técnico para emergências operacionais",
     ],
     process: "Configuração do ambiente de monitorização → Rotinas preventivas → Atendimento contínuo.",
-    accent: "text-[#26B8F2] border-[#26B8F2]/20 bg-[#26B8F2]/10",
+    accent: "text-sky-400 border-sky-400/20 bg-sky-400/10",
   },
 ];
 
 export default function SolucoesPage() {
   return (
-    <div className="flex flex-col w-full overflow-hidden">
+    <div className="flex flex-col w-full overflow-hidden bg-[#0C0D0E]">
       
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-28 overflow-hidden bg-[#0B0D12]">
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-gradient-to-tr from-[#7657F6]/20 via-[#26B8F2]/15 to-transparent rounded-full blur-[140px] pointer-events-none -z-10" />
-
+      <section className="relative py-16 sm:py-24 overflow-hidden border-b border-white/[0.06]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#171B2B] border border-white/[0.08] text-xs font-semibold text-[#26B8F2] tracking-wider uppercase">
-              <Zap className="w-3.5 h-3.5" />
-              <span>Capacidades de Engenharia</span>
+          <div className="text-center max-w-3xl mx-auto space-y-5">
+            <div className="inline-flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
+              <span className="w-8 h-[1px] bg-white/20" />
+              <span className="flex items-center gap-1.5 text-blue-400">
+                <Zap className="w-3.5 h-3.5" />
+                Capacidades de Engenharia
+              </span>
+              <span className="w-8 h-[1px] bg-white/20" />
             </div>
 
-            <h1 className="font-sora text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#F4F5FA] tracking-tight leading-tight">
+            <h1 className="font-sora text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
               Soluções tecnológicas para <br className="hidden sm:inline" />
-              <span className="text-gradient">potencializar o seu negócio.</span>
+              <span className="text-gradient-silver">potencializar o seu negócio.</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-[#9298AA] leading-relaxed font-inter">
-              Desenvolvemos produtos digitais e plataformas sob medida que combinam estética premium, rigor técnico e foco em resultados.
+            <p className="text-sm sm:text-lg text-slate-400 leading-relaxed font-inter">
+              Desenvolvemos produtos digitais e plataformas sob medida que combinam estética sóbria, rigor técnico e foco em resultados operacionais.
             </p>
 
-            <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
-              <span className="text-xs font-mono px-3 py-1 rounded-full bg-[#171B2B] border border-white/[0.08] text-[#9298AA]">
-                Websites
-              </span>
-              <span className="text-xs font-mono px-3 py-1 rounded-full bg-[#171B2B] border border-white/[0.08] text-[#9298AA]">
-                Aplicações Web
-              </span>
-              <span className="text-xs font-mono px-3 py-1 rounded-full bg-[#171B2B] border border-white/[0.08] text-[#9298AA]">
-                E-commerce
-              </span>
-              <span className="text-xs font-mono px-3 py-1 rounded-full bg-[#171B2B] border border-white/[0.08] text-[#9298AA]">
-                Sistemas Sob Medida
-              </span>
-              <span className="text-xs font-mono px-3 py-1 rounded-full bg-[#171B2B] border border-white/[0.08] text-[#9298AA]">
-                Cloud & Suporte
-              </span>
+            <div className="pt-2 flex flex-wrap items-center justify-center gap-2.5">
+              {["Websites", "Aplicações Web", "E-commerce", "Sistemas Sob Medida", "Cloud & Suporte"].map((item) => (
+                <span
+                  key={item}
+                  className="text-xs px-3.5 py-1 rounded-full bg-[#141518] border border-white/[0.08] text-slate-300"
+                >
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Detailed List */}
-      <section className="py-12 sm:py-20 relative bg-[#0B0D12] border-t border-white/[0.06]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-16">
+      <section className="py-12 sm:py-20 relative border-b border-white/[0.06]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
           
           {services.map((service, index) => {
             const Icon = service.icon;
@@ -192,43 +187,43 @@ export default function SolucoesPage() {
               <div
                 key={service.id}
                 id={service.id}
-                className="rounded-3xl bg-[#171B2B]/60 border border-white/[0.08] p-5 sm:p-12 transition-all hover:border-white/[0.18] shadow-2xl relative overflow-hidden"
+                className="rounded-3xl bg-[#141518] border border-white/[0.08] p-6 sm:p-10 transition-all hover:border-white/[0.18] shadow-2xl relative overflow-hidden"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                   
                   {/* Service Core Info */}
-                  <div className={`lg:col-span-7 space-y-6 ${isEven ? "" : "lg:order-2"}`}>
+                  <div className={`lg:col-span-7 space-y-5 ${isEven ? "" : "lg:order-2"}`}>
                     
                     <div className="flex items-center gap-3">
-                      <div className={`w-12 h-12 rounded-xl border flex items-center justify-center ${service.accent}`}>
+                      <div className={`w-12 h-12 rounded-2xl border flex items-center justify-center ${service.accent}`}>
                         <Icon className="w-6 h-6" />
                       </div>
                       <div>
-                        <span className="text-xs font-mono font-medium text-[#26B8F2] uppercase tracking-wider">
+                        <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
                           {service.category}
                         </span>
-                        <h2 className="font-sora text-2xl sm:text-3xl font-bold text-[#F4F5FA]">
+                        <h2 className="font-sora text-2xl sm:text-3xl font-bold text-white">
                           {service.title}
                         </h2>
                       </div>
                     </div>
 
-                    <p className="text-[#9298AA] text-base leading-relaxed font-inter">
+                    <p className="text-slate-400 text-sm sm:text-base leading-relaxed font-inter">
                       {service.description}
                     </p>
 
                     {/* Benefits Grid */}
-                    <div className="space-y-3 pt-2">
-                      <h4 className="text-xs font-sora font-semibold uppercase tracking-wider text-[#F4F5FA]">
+                    <div className="space-y-2.5 pt-2">
+                      <h4 className="text-xs font-sora font-semibold uppercase tracking-wider text-white">
                         Principais Vantagens & Benefícios:
                       </h4>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                         {service.benefits.map((benefit, bIdx) => (
                           <div
                             key={bIdx}
-                            className="flex items-start gap-2.5 p-3 rounded-xl bg-[#0B0D12]/60 border border-white/[0.04] text-xs text-[#9298AA]"
+                            className="flex items-start gap-2.5 p-3 rounded-xl bg-[#0C0D0E] border border-white/[0.04] text-xs text-slate-300"
                           >
-                            <CheckCircle2 className="w-4 h-4 text-[#26B8F2] shrink-0 mt-0.5" />
+                            <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
                             <span>{benefit}</span>
                           </div>
                         ))}
@@ -236,11 +231,11 @@ export default function SolucoesPage() {
                     </div>
 
                     {/* Development Process */}
-                    <div className="p-4 rounded-xl bg-[#0B0D12]/40 border border-white/[0.04]">
-                      <span className="text-xs font-sora font-semibold text-[#7657F6] uppercase tracking-wider block mb-1">
+                    <div className="p-4 rounded-xl bg-[#0C0D0E] border border-white/[0.06]">
+                      <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">
                         Processo de Desenvolvimento:
                       </span>
-                      <p className="text-xs text-[#9298AA] leading-relaxed">
+                      <p className="text-xs text-slate-300 leading-relaxed">
                         {service.process}
                       </p>
                     </div>
@@ -249,7 +244,7 @@ export default function SolucoesPage() {
                     <div className="pt-2">
                       <Link
                         href={`/orcamento?servico=${encodeURIComponent(service.title)}`}
-                        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-[#7657F6] to-[#26B8F2] shadow-md shadow-[#7657F6]/20 hover:opacity-95 transition-all"
+                        className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-semibold text-black bg-white hover:bg-slate-200 transition-all shadow-lg"
                       >
                         <span>Solicitar Orçamento para {service.title}</span>
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -260,31 +255,31 @@ export default function SolucoesPage() {
 
                   {/* Visual Side Card */}
                   <div className={`lg:col-span-5 ${isEven ? "" : "lg:order-1"}`}>
-                    <div className="rounded-2xl bg-[#0B0D12] border border-white/[0.08] p-6 sm:p-8 space-y-5">
+                    <div className="rounded-2xl bg-[#0C0D0E] border border-white/[0.08] p-6 sm:p-7 space-y-4">
                       <div className="flex items-center justify-between pb-3 border-b border-white/[0.06]">
-                        <span className="text-xs font-mono text-[#9298AA]">
+                        <span className="text-xs font-mono text-slate-400">
                           vexa.{service.id}.config
                         </span>
-                        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-400/10 text-emerald-400 border border-emerald-400/20">
+                        <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                           Disponível
                         </span>
                       </div>
 
-                      <div className="space-y-3 text-xs font-mono text-[#9298AA]">
-                        <div className="p-3 rounded-lg bg-[#171B2B]/40 border border-white/[0.04]">
-                          <span className="text-[#7657F6]">divisão:</span> &quot;{service.category}&quot;
+                      <div className="space-y-2 text-xs font-mono text-slate-400">
+                        <div className="p-2.5 rounded-lg bg-[#141518] border border-white/[0.04]">
+                          <span className="text-blue-400">divisão:</span> &quot;{service.category}&quot;
                         </div>
-                        <div className="p-3 rounded-lg bg-[#171B2B]/40 border border-white/[0.04]">
-                          <span className="text-[#26B8F2]">padrão_entrega:</span> &quot;Engenharia de precisão&quot;
+                        <div className="p-2.5 rounded-lg bg-[#141518] border border-white/[0.04]">
+                          <span className="text-sky-400">padrão_entrega:</span> &quot;Engenharia de precisão&quot;
                         </div>
-                        <div className="p-3 rounded-lg bg-[#171B2B]/40 border border-white/[0.04]">
+                        <div className="p-2.5 rounded-lg bg-[#141518] border border-white/[0.04]">
                           <span className="text-emerald-400">suporte:</span> &quot;Acompanhamento VEXA&quot;
                         </div>
                       </div>
 
-                      <div className="pt-2 border-t border-white/[0.06] text-xs text-[#9298AA] flex items-center justify-between">
+                      <div className="pt-2 border-t border-white/[0.06] text-xs text-slate-400 flex items-center justify-between">
                         <span>Padrão Internacional</span>
-                        <Sparkles className="w-4 h-4 text-[#7657F6]" />
+                        <Sparkles className="w-4 h-4 text-blue-400" />
                       </div>
                     </div>
                   </div>
@@ -298,18 +293,18 @@ export default function SolucoesPage() {
       </section>
 
       {/* Global Bottom CTA */}
-      <section className="py-20 relative bg-[#0B0D12] border-t border-white/[0.06]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <h2 className="font-sora text-3xl sm:text-4xl font-bold text-[#F4F5FA]">
+      <section className="py-16 sm:py-20 relative">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+          <h2 className="font-sora text-2xl sm:text-4xl font-bold text-white">
             Precisa de uma solução sob medida para a sua empresa?
           </h2>
-          <p className="text-[#9298AA] text-base max-w-xl mx-auto">
-            Apresente-nos as necessidades do seu projeto e desenharemos a melhor estratégia tecnológica para o seu caso.
+          <p className="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
+            Apresente-nos as necessidades da sua operação e desenharemos a melhor estratégia tecnológica para o seu caso.
           </p>
           <div className="pt-2">
             <Link
               href="/orcamento"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-[#7657F6] to-[#26B8F2] shadow-xl shadow-[#7657F6]/30 hover:opacity-95 transition-all"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-semibold text-black bg-white hover:bg-slate-200 shadow-xl transition-all"
             >
               <span>Solicitar Orçamento Sem Compromisso</span>
               <ArrowRight className="w-4 h-4" />
@@ -321,4 +316,3 @@ export default function SolucoesPage() {
     </div>
   );
 }
-

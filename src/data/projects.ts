@@ -22,7 +22,7 @@ export const projectsData: Project[] = [
     description:
       "Plataforma completa em pleno funcionamento para venda de livros, e-books e vídeo-aulas com catálogo multimídia, painel administrativo e pagamentos instantâneos via e-M-Pesa.",
     tag: "Projeto Real no Ar",
-    accent: "from-amber-400 via-[#7657F6] to-[#26B8F2]",
+    accent: "from-blue-600 to-sky-400",
     deliverables: [
       "Venda de Livros & E-books Digitais",
       "Streaming de Vídeo-aulas Integrado",
@@ -43,7 +43,7 @@ export const projectsData: Project[] = [
     description:
       "Loja virtual moderna e sofisticada para marca de moda feminina e vestuário, com catálogo de produtos dinâmico, preços em Meticais (MT), carrinho de compras e integração direta com WhatsApp.",
     tag: "Projeto Real no Ar",
-    accent: "from-pink-500 via-[#7657F6] to-amber-400",
+    accent: "from-rose-500 to-amber-500",
     deliverables: [
       "E-commerce Completo de Moda",
       "Catálogo Dinâmico (Roupas, Sapatilhas e Coleções)",

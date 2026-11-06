@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-vexa-black: #0B0D12;
-  --color-vexa-card: #121622;
-  --color-vexa-navy: #171B2B;
-  --color-vexa-purple: #7657F6;
-  --color-vexa-blue: #26B8F2;
-  --color-vexa-white: #F4F5FA;
-  --color-vexa-gray: #9298AA;
+  --color-vexa-black: #0C0D0E;
+  --color-vexa-card: #141518;
+  --color-vexa-navy: #1A1B20;
+  --color-vexa-purple: #2563EB;
+  --color-vexa-blue: #38BDF8;
+  --color-vexa-white: #F8FAFC;
+  --color-vexa-gray: #94A3B8;
   --color-vexa-border: rgba(255, 255, 255, 0.08);
 
   --font-sora: var(--font-sora), sans-serif;
@@ -15,8 +15,8 @@
 }
 
 :root {
-  --background: #0B0D12;
-  --foreground: #F4F5FA;
+  --background: #0C0D0E;
+  --foreground: #F8FAFC;
 }
 
 html {
@@ -25,59 +25,56 @@ html {
 }
 
 body {
-  background-color: #0B0D12;
-  color: #F4F5FA;
+  background-color: #0C0D0E;
+  color: #F8FAFC;
   font-family: var(--font-inter), sans-serif;
   overflow-x: hidden;
   min-height: 100vh;
 }
 
-/* Custom scrollbar for tech aesthetics */
+/* Custom minimal scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #0B0D12;
+  background: #0C0D0E;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e2438;
-  border-radius: 4px;
+  background: #23252B;
+  border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #7657F6;
+  background: #3B82F6;
 }
 
-/* Gradient text utilities */
+/* Human Luxury text gradients (No synthetic neon AI gradients) */
 .text-gradient {
-  background: linear-gradient(135deg, #F4F5FA 20%, #7657F6 60%, #26B8F2 100%);
+  background: linear-gradient(180deg, #FFFFFF 20%, #CBD5E1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.text-gradient-purple-blue {
-  background: linear-gradient(135deg, #7657F6 0%, #26B8F2 100%);
+.text-gradient-blue {
+  background: linear-gradient(135deg, #60A5FA 0%, #2563EB 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Glassmorphism and glow effects */
-.glass-panel {
-  background: rgba(23, 27, 43, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+.text-gradient-silver {
+  background: linear-gradient(180deg, #FFFFFF 0%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Luxury solid matte card */
+.vexa-card {
+  background: #141518;
   border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
-.glass-panel:hover {
-  border-color: rgba(118, 87, 246, 0.3);
-}
-
-.glow-purple {
-  box-shadow: 0 0 35px -5px rgba(118, 87, 246, 0.25);
-}
-
-.glow-blue {
-  box-shadow: 0 0 35px -5px rgba(38, 184, 242, 0.25);
+.vexa-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
 }
 
 .font-sora {

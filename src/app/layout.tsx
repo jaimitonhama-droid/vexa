@@ -51,7 +51,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt" className={`${sora.variable} ${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-[#0B0D12] text-[#F4F5FA] font-inter selection:bg-[#7657F6]/30 selection:text-white">
+      <body className="min-h-full flex flex-col bg-[#0C0D0E] text-[#F8FAFC] font-inter selection:bg-blue-600/30 selection:text-white">
         <Header />
         <main className="flex-1 pt-20">
           {children}
