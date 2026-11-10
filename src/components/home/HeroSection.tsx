@@ -43,18 +43,20 @@ export default function HeroSection() {
         {/* CTAs (Humanized Luxury Pill Buttons) */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-1 sm:pt-2">
           <Link
-            href="/solucoes"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/25 hover:-translate-y-0.5 active:translate-y-0"
+            href="/orcamento"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/30 hover:-translate-y-0.5 active:translate-y-0"
           >
-            <span>Explorar Soluções</span>
+            <span>Iniciar Projeto</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
-          <Link
-            href="/produtos"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-[#F8FAFC] bg-[#111827] border border-white/[0.12] hover:border-white/[0.25] hover:bg-[#1E2638] transition-all hover:-translate-y-0.5"
+          <a
+            href="https://wa.me/258872024095?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto%20com%20a%20VEXA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-[#F8FAFC] bg-[#111827] border border-blue-900/40 hover:border-white/[0.25] hover:bg-[#1E2638] transition-all hover:-translate-y-0.5"
           >
-            <span>Conhecer os Nossos Produtos</span>
-          </Link>
+            <span>Falar no WhatsApp</span>
+          </a>
         </div>
 
         {/* Micro Stats / Highlights */}

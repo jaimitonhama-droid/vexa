@@ -6,7 +6,7 @@ export default function CtaSection() {
     <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0A0D14] border-t border-blue-900/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="relative rounded-3xl bg-[#111827] border border-white/[0.12] p-6 sm:p-16 lg:p-20 text-center shadow-2xl overflow-hidden">
+        <div className="relative rounded-3xl bg-[#111827] border border-blue-900/40 p-6 sm:p-16 lg:p-20 text-center shadow-2xl overflow-hidden">
           
           {/* Subtle grid pattern inside */}
           <div
@@ -43,20 +43,22 @@ export default function CtaSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-2">
               <Link
                 href="/orcamento"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-xs sm:text-sm font-bold text-black bg-blue-600 hover:bg-blue-500 text-white shadow-xl transition-all hover:-translate-y-0.5 active:translate-y-0"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-xs sm:text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-xl shadow-blue-600/30 transition-all hover:-translate-y-0.5 active:translate-y-0"
               >
                 <Rocket className="w-4 h-4" />
                 <span>Começar um Projeto</span>
                 <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
               
-              <Link
-                href="/contactos"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-[#F8FAFC] bg-[#0A0D14] border border-white/[0.12] hover:border-white/[0.25] hover:bg-[#1E2638] transition-all hover:-translate-y-0.5"
+              <a
+                href="https://wa.me/258872024095?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20equipa%20da%20VEXA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-[#F8FAFC] bg-[#0A0D14] border border-blue-900/40 hover:border-white/[0.25] hover:bg-[#1E2638] transition-all hover:-translate-y-0.5"
               >
-                <MessageSquare className="w-4 h-4 text-blue-400" />
-                <span>Falar Connosco</span>
-              </Link>
+                <MessageSquare className="w-4 h-4 text-emerald-400" />
+                <span>Falar no WhatsApp</span>
+              </a>
             </div>
 
             {/* Extra assurance */}

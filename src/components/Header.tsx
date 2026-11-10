@@ -7,11 +7,9 @@ import { usePathname } from "next/navigation";
 import { Menu, X, ArrowUpRight, Sparkles } from "lucide-react";
 
 const navigationItems = [
-  { name: "Início", href: "/" },
-  { name: "Sobre nós", href: "/sobre" },
-  { name: "Soluções", href: "/solucoes" },
-  { name: "Produtos", href: "/produtos" },
-  { name: "Projetos", href: "/projetos" },
+  { name: "Serviços", href: "/#servicos" },
+  { name: "Portfólio", href: "/#portfolio" },
+  { name: "Sobre", href: "/sobre" },
   { name: "Contactos", href: "/contactos" },
 ];
 
@@ -88,18 +86,12 @@ export default function Header() {
           </nav>
 
           {/* CTA Button (Desktop) */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center">
             <Link
               href="/orcamento"
-              className="text-xs uppercase tracking-wider text-[#94A3B8] hover:text-white font-medium transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/25 transition-all hover:-translate-y-0.5 active:translate-y-0"
             >
-              Pedir Orçamento
-            </Link>
-            <Link
-              href="/contactos"
-              className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-semibold text-black bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-md hover:-translate-y-0.5 active:translate-y-0"
-            >
-              <span>Falar com a VEXA</span>
+              <span>Pedir Orçamento</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
           </div>
@@ -140,20 +132,13 @@ export default function Header() {
               );
             })}
 
-            <div className="pt-4 border-t border-blue-900/40 space-y-2">
+            <div className="pt-4 border-t border-blue-900/40">
               <Link
                 href="/orcamento"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center w-full py-2.5 px-4 rounded-full text-xs font-semibold text-[#F8FAFC] bg-[#111827] border border-blue-900/40 hover:border-white/[0.15]"
+                className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-full text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/25 transition-all"
               >
-                Solicitar Orçamento
-              </Link>
-              <Link
-                href="/contactos"
-                onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-1.5 w-full py-2.5 px-4 rounded-full text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/25 transition-all"
-              >
-                <span>Falar com a VEXA</span>
+                <span>Pedir Orçamento</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>

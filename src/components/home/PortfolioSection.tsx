@@ -7,7 +7,7 @@ export default function PortfolioSection() {
   const showcaseProjects = projectsData.slice(0, 4);
 
   return (
-    <section id="projetos" className="py-14 sm:py-20 relative overflow-hidden bg-[#0A0D14] border-t border-blue-900/30">
+    <section id="portfolio" className="py-14 sm:py-20 relative overflow-hidden bg-[#0A0D14] border-t border-blue-900/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
