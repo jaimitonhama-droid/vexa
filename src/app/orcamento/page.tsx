@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 export default function OrcamentoPage() {
   return (
-    <div className="flex flex-col w-full overflow-hidden bg-[#0C0D0E]">
+    <div className="flex flex-col w-full overflow-hidden bg-[#0A0D14]">
       
       {/* Hero Header */}
-      <section className="relative py-12 sm:py-20 lg:py-24 overflow-hidden border-b border-white/[0.06]">
+      <section className="relative py-12 sm:py-20 lg:py-24 overflow-hidden border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-4 sm:space-y-5">
             <div className="inline-flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
@@ -57,7 +57,7 @@ export default function OrcamentoPage() {
       <section className="py-8 sm:py-16 relative">
         <div className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8">
           <Suspense fallback={
-            <div className="p-12 text-center text-sm text-slate-400 bg-[#141518] rounded-3xl border border-white/[0.08]">
+            <div className="p-12 text-center text-sm text-slate-400 bg-[#111827] rounded-3xl border border-blue-900/40">
               A carregar formulário de orçamento...
             </div>
           }>

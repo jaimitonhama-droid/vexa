@@ -40,10 +40,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
   const isTurnkey = product.type === "turnkey-site";
 
   return (
-    <div className="flex flex-col w-full overflow-hidden bg-[#0C0D0E]">
+    <div className="flex flex-col w-full overflow-hidden bg-[#0A0D14]">
       
       {/* Top Breadcrumb & Navigation */}
-      <section className="py-6 border-b border-white/[0.06]">
+      <section className="py-6 border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             href="/produtos"
@@ -70,7 +70,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                 <span className="text-xs font-medium px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                   {product.status}
                 </span>
-                <span className="text-xs font-medium px-3 py-1 rounded-full bg-[#141518] text-slate-400 border border-white/[0.08]">
+                <span className="text-xs font-medium px-3 py-1 rounded-full bg-[#111827] text-slate-400 border border-blue-900/40">
                   {product.badge}
                 </span>
               </div>
@@ -89,7 +89,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
               </p>
 
               {/* Confirmed Features */}
-              <div className="space-y-3 pt-4 border-t border-white/[0.06]">
+              <div className="space-y-3 pt-4 border-t border-blue-900/30">
                 <h3 className="font-sora text-xs font-semibold tracking-wider uppercase text-white">
                   Funcionalidades Incluídas na Solução:
                 </h3>
@@ -97,7 +97,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                   {product.features.map((feat, idx) => (
                     <div
                       key={idx}
-                      className="flex items-start gap-2.5 p-3 rounded-2xl bg-[#141518] border border-white/[0.06] text-xs text-slate-300"
+                      className="flex items-start gap-2.5 p-3 rounded-2xl bg-[#111827] border border-blue-900/30 text-xs text-slate-300"
                     >
                       <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
                       <span>{feat}</span>
@@ -107,7 +107,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
               </div>
 
               {/* Benefits */}
-              <div className="space-y-3 pt-4 border-t border-white/[0.06]">
+              <div className="space-y-3 pt-4 border-t border-blue-900/30">
                 <h3 className="font-sora text-xs font-semibold tracking-wider uppercase text-white">
                   Benefícios para o Negócio:
                 </h3>
@@ -122,7 +122,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
               </div>
 
               {/* Technologies */}
-              <div className="pt-4 border-t border-white/[0.06]">
+              <div className="pt-4 border-t border-blue-900/30">
                 <span className="text-xs uppercase tracking-wider text-slate-400 font-medium block mb-2">
                   Stack Tecnológica:
                 </span>
@@ -130,7 +130,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                   {product.techStack.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 rounded-full bg-[#141518] border border-white/[0.08] text-xs font-mono text-slate-300"
+                      className="px-3 py-1 rounded-full bg-[#111827] border border-blue-900/40 text-xs font-mono text-slate-300"
                     >
                       {tech}
                     </span>
@@ -142,9 +142,9 @@ export default async function ProductDetailPage({ params }: PageProps) {
 
             {/* Right Column: Acquisition / Request Card */}
             <div className="lg:col-span-5">
-              <div className="sticky top-28 rounded-3xl bg-[#141518] border border-white/[0.08] p-7 shadow-2xl space-y-6">
+              <div className="sticky top-28 rounded-3xl bg-[#111827] border border-blue-900/40 p-7 shadow-2xl space-y-6">
                 
-                <div className="flex items-center justify-between pb-4 border-b border-white/[0.06]">
+                <div className="flex items-center justify-between pb-4 border-b border-blue-900/30">
                   <div>
                     <span className="text-[10px] uppercase font-mono text-slate-400 block">
                       {product.priceLabel}
@@ -172,10 +172,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t border-white/[0.06] space-y-3">
+                <div className="pt-4 border-t border-blue-900/30 space-y-3">
                   <Link
                     href={`/orcamento?produto=${encodeURIComponent(product.name)}`}
-                    className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full text-sm font-semibold text-black bg-white hover:bg-slate-200 transition-all shadow-lg"
+                    className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full text-sm font-semibold text-black bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-lg"
                   >
                     <span>{isTurnkey ? "Solicitar Aquisição do Site" : "Solicitar Acesso Antecipado"}</span>
                     <ArrowRight className="w-4 h-4" />
@@ -183,7 +183,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
 
                   <Link
                     href="/contactos"
-                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full text-xs font-semibold text-slate-300 bg-[#0C0D0E] border border-white/[0.08] hover:border-white/[0.2] hover:text-white transition-colors"
+                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full text-xs font-semibold text-slate-300 bg-[#0A0D14] border border-blue-900/40 hover:border-blue-800/60 hover:text-white transition-colors"
                   >
                     <span>Falar com a Equipa</span>
                   </Link>

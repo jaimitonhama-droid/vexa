@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles, Calendar, Target, BarChart3, Lock } from "lucide-
 
 export default function ProductsSection() {
   return (
-    <section id="produtos" className="py-20 sm:py-24 relative overflow-hidden bg-[#0C0D0E] border-t border-white/[0.06]">
+    <section id="produtos" className="py-20 sm:py-24 relative overflow-hidden bg-[#0A0D14] border-t border-blue-900/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header with Editorial Styling */}
@@ -26,7 +26,7 @@ export default function ProductsSection() {
         </div>
 
         {/* Featured Flagship Product: VYRON */}
-        <div className="relative rounded-3xl bg-[#141518] border border-white/[0.08] p-7 sm:p-10 lg:p-12 overflow-hidden max-w-5xl mx-auto shadow-2xl">
+        <div className="relative rounded-3xl bg-[#111827] border border-blue-900/40 p-7 sm:p-10 lg:p-12 overflow-hidden max-w-5xl mx-auto shadow-2xl">
           
           <div className="relative z-10 space-y-8">
             
@@ -49,7 +49,7 @@ export default function ProductsSection() {
 
             {/* Product Title and Brand */}
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#1A1B20] border border-white/10 flex items-center justify-center font-sora font-extrabold text-xl text-white shrink-0 shadow-inner">
+              <div className="w-14 h-14 rounded-2xl bg-[#1E2638] border border-white/10 flex items-center justify-center font-sora font-extrabold text-xl text-white shrink-0 shadow-inner">
                 VY
               </div>
               <div>
@@ -68,27 +68,27 @@ export default function ProductsSection() {
             </p>
 
             {/* Confirmed Features Grid */}
-            <div className="space-y-4 pt-4 border-t border-white/[0.06]">
+            <div className="space-y-4 pt-4 border-t border-blue-900/30">
               <h4 className="text-xs font-sora font-semibold tracking-wider uppercase text-slate-400">
                 Principais Funcionalidades Confirmadas:
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs text-slate-400">
-                <div className="p-4 rounded-2xl bg-[#0C0D0E] border border-white/[0.06] space-y-2">
+                <div className="p-4 rounded-2xl bg-[#0A0D14] border border-blue-900/30 space-y-2">
                   <Calendar className="w-5 h-5 text-blue-400" />
                   <p className="font-sora font-semibold text-white text-sm">Planeamento Diário</p>
                   <p className="leading-relaxed">Organização com timeline e prioridades claras.</p>
                 </div>
-                <div className="p-4 rounded-2xl bg-[#0C0D0E] border border-white/[0.06] space-y-2">
+                <div className="p-4 rounded-2xl bg-[#0A0D14] border border-blue-900/30 space-y-2">
                   <Target className="w-5 h-5 text-sky-400" />
                   <p className="font-sora font-semibold text-white text-sm">Metas & Hábitos</p>
                   <p className="leading-relaxed">Acompanhamento contínuo de objetivos e rotinas.</p>
                 </div>
-                <div className="p-4 rounded-2xl bg-[#0C0D0E] border border-white/[0.06] space-y-2">
+                <div className="p-4 rounded-2xl bg-[#0A0D14] border border-blue-900/30 space-y-2">
                   <BarChart3 className="w-5 h-5 text-blue-400" />
                   <p className="font-sora font-semibold text-white text-sm">Métricas Visuais</p>
                   <p className="leading-relaxed">Estatísticas de produtividade e foco sem ruído.</p>
                 </div>
-                <div className="p-4 rounded-2xl bg-[#0C0D0E] border border-white/[0.06] space-y-2">
+                <div className="p-4 rounded-2xl bg-[#0A0D14] border border-blue-900/30 space-y-2">
                   <Lock className="w-5 h-5 text-emerald-400" />
                   <p className="font-sora font-semibold text-white text-sm">Privacidade Total</p>
                   <p className="leading-relaxed">Criptografia e sincronização segura em nuvem.</p>
@@ -97,17 +97,17 @@ export default function ProductsSection() {
             </div>
 
             {/* Action Buttons */}
-            <div className="pt-6 border-t border-white/[0.06] flex flex-col sm:flex-row items-center gap-3">
+            <div className="pt-6 border-t border-blue-900/30 flex flex-col sm:flex-row items-center gap-3">
               <Link
                 href="/produtos/vyron"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-black bg-white hover:bg-slate-200 transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-black bg-blue-600 hover:bg-blue-500 text-white transition-all"
               >
                 <span>Conhecer Produto VYRON</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 href="/produtos"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-medium text-slate-300 bg-[#1A1B20] border border-white/[0.08] hover:border-white/[0.2] hover:text-white transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-medium text-slate-300 bg-[#1E2638] border border-blue-900/40 hover:border-blue-800/60 hover:text-white transition-all"
               >
                 <span>Ver Todos os Produtos & Soluções</span>
               </Link>

@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 export default function ProjetosPage() {
   return (
-    <div className="flex flex-col w-full overflow-hidden bg-[#0C0D0E]">
+    <div className="flex flex-col w-full overflow-hidden bg-[#0A0D14]">
       
       {/* Hero Section */}
-      <section className="relative py-16 sm:py-24 overflow-hidden border-b border-white/[0.06]">
+      <section className="relative py-16 sm:py-24 overflow-hidden border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-5">
             <div className="inline-flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
@@ -35,7 +35,7 @@ export default function ProjetosPage() {
               Conheça as soluções, websites, aplicações e plataformas demonstrativas que exemplificam o padrão visual, arquitetural e tecnológico do VEXA Technology Group.
             </p>
 
-            <div className="inline-block p-3 rounded-2xl bg-[#141518] border border-white/[0.08] text-xs text-slate-400">
+            <div className="inline-block p-3 rounded-2xl bg-[#111827] border border-blue-900/40 text-xs text-slate-400">
               Todos os projetos apresentados foram desenhados com princípios de engenharia limpa, design contemporâneo e velocidade de execução.
             </div>
           </div>
@@ -43,7 +43,7 @@ export default function ProjetosPage() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-14 sm:py-20 relative border-b border-white/[0.06]">
+      <section className="py-14 sm:py-20 relative border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ProjectsGallery />
         </div>
@@ -61,7 +61,7 @@ export default function ProjetosPage() {
           <div className="pt-2">
             <Link
               href="/orcamento"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-semibold text-black bg-white hover:bg-slate-200 shadow-xl transition-all"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-semibold text-black bg-blue-600 hover:bg-blue-500 text-white shadow-xl transition-all"
             >
               <span>Solicitar Orçamento</span>
             </Link>

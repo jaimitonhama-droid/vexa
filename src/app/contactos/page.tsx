@@ -13,7 +13,7 @@ export default function ContactosPage() {
     <div className="flex flex-col w-full overflow-hidden">
       
       {/* Hero Header */}
-      <section className="relative py-14 sm:py-20 lg:py-24 overflow-hidden bg-[#0C0D0E]">
+      <section className="relative py-14 sm:py-20 lg:py-24 overflow-hidden bg-[#0A0D14]">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,7 +39,7 @@ export default function ContactosPage() {
       </section>
 
       {/* Main Content: Centered Form + Loose Contact Information Below */}
-      <section className="py-12 sm:py-16 relative bg-[#0C0D0E] border-t border-white/[0.06]">
+      <section className="py-12 sm:py-16 relative bg-[#0A0D14] border-t border-blue-900/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Form Header */}
@@ -61,7 +61,7 @@ export default function ContactosPage() {
           </div>
 
           {/* Loose Contact Details (Sem quadrado / Informações Soltas) */}
-          <div className="mt-14 pt-10 border-t border-white/[0.08]">
+          <div className="mt-14 pt-10 border-t border-blue-900/40">
             <div className="text-center mb-8">
               <span className="text-[10px] sm:text-xs font-mono text-[#94A3B8] uppercase tracking-[0.2em]">
                 Canais de Atendimento Direto
@@ -72,7 +72,7 @@ export default function ContactosPage() {
               
               {/* Email */}
               <div className="flex flex-col items-center sm:items-start text-center sm:text-left space-y-2">
-                <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-[#F8FAFC]">
+                <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-blue-900/40 flex items-center justify-center text-[#F8FAFC]">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
@@ -108,7 +108,7 @@ export default function ContactosPage() {
 
               {/* Sede / Localização */}
               <div className="flex flex-col items-center sm:items-start text-center sm:text-left space-y-2">
-                <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-[#F8FAFC]">
+                <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-blue-900/40 flex items-center justify-center text-[#F8FAFC]">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
@@ -122,7 +122,7 @@ export default function ContactosPage() {
 
               {/* Tempo de Resposta */}
               <div className="flex flex-col items-center sm:items-start text-center sm:text-left space-y-2">
-                <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-amber-400">
+                <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-blue-900/40 flex items-center justify-center text-amber-400">
                   <Clock className="w-4 h-4" />
                 </div>
                 <div>
@@ -137,7 +137,7 @@ export default function ContactosPage() {
             </div>
 
             {/* Privacy note - loose below */}
-            <div className="mt-10 pt-6 border-t border-white/[0.04] flex items-center justify-center gap-2 text-xs text-[#94A3B8] text-center">
+            <div className="mt-10 pt-6 border-t border-blue-900/20 flex items-center justify-center gap-2 text-xs text-[#94A3B8] text-center">
               <ShieldCheck className="w-4 h-4 text-blue-400 shrink-0" />
               <span>Privacidade Assegurada: Os dados submetidos são tratados com total sigilo profissional.</span>
             </div>

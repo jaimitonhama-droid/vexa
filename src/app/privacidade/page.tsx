@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 
 export default function PrivacidadePage() {
   return (
-    <div className="flex flex-col w-full overflow-hidden bg-[#0C0D0E]">
+    <div className="flex flex-col w-full overflow-hidden bg-[#0A0D14]">
       
       {/* Hero Header */}
-      <section className="relative py-16 sm:py-24 overflow-hidden border-b border-white/[0.06]">
+      <section className="relative py-16 sm:py-24 overflow-hidden border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-5">
             <div className="inline-flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
@@ -38,13 +38,13 @@ export default function PrivacidadePage() {
       </section>
 
       {/* Main Legal & Privacy Content */}
-      <section className="py-14 sm:py-20 relative border-b border-white/[0.06]">
+      <section className="py-14 sm:py-20 relative border-b border-blue-900/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           
           {/* Section 1: Compromisso de Privacidade */}
-          <div className="rounded-3xl bg-[#141518] border border-white/[0.08] p-7 sm:p-10 space-y-4 shadow-xl">
+          <div className="rounded-3xl bg-[#111827] border border-blue-900/40 p-7 sm:p-10 space-y-4 shadow-xl">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-[#0C0D0E] border border-white/[0.08] flex items-center justify-center text-blue-400">
+              <div className="w-10 h-10 rounded-2xl bg-[#0A0D14] border border-blue-900/40 flex items-center justify-center text-blue-400">
                 <Lock className="w-5 h-5" />
               </div>
               <h2 className="font-sora text-xl sm:text-2xl font-bold text-white">
@@ -67,9 +67,9 @@ export default function PrivacidadePage() {
           </div>
 
           {/* Section 2: Propriedade e Código dos Sites */}
-          <div className="rounded-3xl bg-[#141518] border border-white/[0.08] p-7 sm:p-10 space-y-4 shadow-xl">
+          <div className="rounded-3xl bg-[#111827] border border-blue-900/40 p-7 sm:p-10 space-y-4 shadow-xl">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-[#0C0D0E] border border-white/[0.08] flex items-center justify-center text-blue-400">
+              <div className="w-10 h-10 rounded-2xl bg-[#0A0D14] border border-blue-900/40 flex items-center justify-center text-blue-400">
                 <FileText className="w-5 h-5" />
               </div>
               <h2 className="font-sora text-xl sm:text-2xl font-bold text-white">
@@ -96,9 +96,9 @@ export default function PrivacidadePage() {
           </div>
 
           {/* Section 3: Segurança de Pagamentos e Transações */}
-          <div className="rounded-3xl bg-[#141518] border border-white/[0.08] p-7 sm:p-10 space-y-4 shadow-xl">
+          <div className="rounded-3xl bg-[#111827] border border-blue-900/40 p-7 sm:p-10 space-y-4 shadow-xl">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-[#0C0D0E] border border-white/[0.08] flex items-center justify-center text-emerald-400">
+              <div className="w-10 h-10 rounded-2xl bg-[#0A0D14] border border-blue-900/40 flex items-center justify-center text-emerald-400">
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <h2 className="font-sora text-xl sm:text-2xl font-bold text-white">
@@ -111,7 +111,7 @@ export default function PrivacidadePage() {
           </div>
 
           {/* Section 4: Contacto Oficial */}
-          <div className="p-7 sm:p-10 rounded-3xl bg-[#141518] border border-white/[0.08] space-y-4 shadow-xl">
+          <div className="p-7 sm:p-10 rounded-3xl bg-[#111827] border border-blue-900/40 space-y-4 shadow-xl">
             <h3 className="font-sora text-lg font-bold text-white">
               Dúvidas sobre a nossa política?
             </h3>
@@ -141,7 +141,7 @@ export default function PrivacidadePage() {
           <div className="pt-4 text-center">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-semibold text-slate-300 bg-[#141518] border border-white/[0.08] hover:border-white/[0.2] hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-semibold text-slate-300 bg-[#111827] border border-blue-900/40 hover:border-blue-800/60 hover:text-white transition-colors"
             >
               <span>Voltar à Página Inicial</span>
               <ArrowRight className="w-4 h-4 text-blue-400" />

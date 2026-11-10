@@ -40,7 +40,7 @@ export default function FaqSection() {
   };
 
   return (
-    <section className="py-20 sm:py-24 relative overflow-hidden bg-[#0C0D0E] border-t border-white/[0.06]">
+    <section className="py-20 sm:py-24 relative overflow-hidden bg-[#0A0D14] border-t border-blue-900/30">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header with Editorial Styling */}
@@ -71,7 +71,7 @@ export default function FaqSection() {
             return (
               <div
                 key={index}
-                className="rounded-2xl bg-[#141518] border border-white/[0.08] overflow-hidden transition-all duration-200 hover:border-white/[0.18]"
+                className="rounded-2xl bg-[#111827] border border-blue-900/40 overflow-hidden transition-all duration-200 hover:border-white/[0.18]"
               >
                 <button
                   type="button"
@@ -82,7 +82,7 @@ export default function FaqSection() {
                     {faq.question}
                   </span>
                   <div
-                    className={`w-7 h-7 rounded-full bg-[#1A1B20] border border-white/10 flex items-center justify-center text-slate-300 shrink-0 transition-transform duration-200 ${
+                    className={`w-7 h-7 rounded-full bg-[#1E2638] border border-white/10 flex items-center justify-center text-slate-300 shrink-0 transition-transform duration-200 ${
                       isOpen ? "rotate-180 text-blue-400" : ""
                     }`}
                   >
@@ -91,7 +91,7 @@ export default function FaqSection() {
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-5 pt-1 border-t border-white/[0.04]">
+                  <div className="px-6 pb-5 pt-1 border-t border-blue-900/20">
                     <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-inter">
                       {faq.answer}
                     </p>
@@ -103,7 +103,7 @@ export default function FaqSection() {
         </div>
 
         {/* Still have questions CTA */}
-        <div className="mt-12 text-center pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-12 text-center pt-8 border-t border-blue-900/30 flex flex-col sm:flex-row items-center justify-center gap-4">
           <span className="text-xs sm:text-sm text-slate-400">
             Tem alguma pergunta específica sobre o seu projeto?
           </span>
@@ -111,7 +111,7 @@ export default function FaqSection() {
             href="https://wa.me/258872024095?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20os%20servi%C3%A7os%20da%20VEXA."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-black bg-white hover:bg-slate-200 transition-all shadow-md"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-black bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-md"
           >
             <span>Falar no WhatsApp</span>
             <ArrowRight className="w-3.5 h-3.5" />

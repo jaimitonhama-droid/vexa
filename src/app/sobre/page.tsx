@@ -37,10 +37,10 @@ const values = [
 
 export default function SobrePage() {
   return (
-    <div className="flex flex-col w-full overflow-hidden bg-[#0C0D0E]">
+    <div className="flex flex-col w-full overflow-hidden bg-[#0A0D14]">
       
       {/* Hero Section */}
-      <section className="relative py-16 sm:py-24 overflow-hidden border-b border-white/[0.06]">
+      <section className="relative py-16 sm:py-24 overflow-hidden border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-5">
             <div className="inline-flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
@@ -65,7 +65,7 @@ export default function SobrePage() {
       </section>
 
       {/* Narrative & History Section */}
-      <section className="py-16 sm:py-20 relative border-b border-white/[0.06]">
+      <section className="py-16 sm:py-20 relative border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             
@@ -101,9 +101,9 @@ export default function SobrePage() {
 
             {/* Visual tech badge box */}
             <div className="lg:col-span-6">
-              <div className="rounded-3xl bg-[#141518] border border-white/[0.08] p-7 sm:p-10 shadow-2xl relative overflow-hidden">
+              <div className="rounded-3xl bg-[#111827] border border-blue-900/40 p-7 sm:p-10 shadow-2xl relative overflow-hidden">
                 <div className="space-y-5">
-                  <div className="w-12 h-12 rounded-2xl bg-[#1A1B20] border border-white/10 flex items-center justify-center text-blue-400 shadow-inner">
+                  <div className="w-12 h-12 rounded-2xl bg-[#1E2638] border border-white/10 flex items-center justify-center text-blue-400 shadow-inner">
                     <Layers className="w-6 h-6" />
                   </div>
 
@@ -115,7 +115,7 @@ export default function SobrePage() {
                     Acreditamos que o código de excelência nasce da interseção entre rigor técnico e design intuitivo. Não desenvolvemos por desenvolver; resolvemos dores reais de forma eficiente, eliminando excessos e priorizando o que verdadeiramente gera valor.
                   </p>
 
-                  <div className="pt-4 border-t border-white/[0.06] space-y-3">
+                  <div className="pt-4 border-t border-blue-900/30 space-y-3">
                     <div className="flex items-center gap-3 text-xs text-slate-300">
                       <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0" />
                       <span>Foco absoluto na experiência do utilizador e acabamento</span>
@@ -138,14 +138,14 @@ export default function SobrePage() {
       </section>
 
       {/* Mission & Vision Section */}
-      <section id="visao" className="py-16 sm:py-20 relative border-b border-white/[0.06]">
+      <section id="visao" className="py-16 sm:py-20 relative border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             
             {/* Vision Card */}
-            <div className="rounded-3xl bg-[#141518] border border-white/[0.08] p-7 sm:p-10 shadow-xl relative overflow-hidden">
-              <div className="w-12 h-12 rounded-2xl bg-[#1A1B20] border border-white/10 text-blue-400 flex items-center justify-center mb-5">
+            <div className="rounded-3xl bg-[#111827] border border-blue-900/40 p-7 sm:p-10 shadow-xl relative overflow-hidden">
+              <div className="w-12 h-12 rounded-2xl bg-[#1E2638] border border-white/10 text-blue-400 flex items-center justify-center mb-5">
                 <Compass className="w-6 h-6" />
               </div>
               <span className="text-xs font-semibold uppercase tracking-widest text-slate-400">
@@ -163,8 +163,8 @@ export default function SobrePage() {
             </div>
 
             {/* Mission Card */}
-            <div className="rounded-3xl bg-[#141518] border border-white/[0.08] p-7 sm:p-10 shadow-xl relative overflow-hidden">
-              <div className="w-12 h-12 rounded-2xl bg-[#1A1B20] border border-white/10 text-sky-400 flex items-center justify-center mb-5">
+            <div className="rounded-3xl bg-[#111827] border border-blue-900/40 p-7 sm:p-10 shadow-xl relative overflow-hidden">
+              <div className="w-12 h-12 rounded-2xl bg-[#1E2638] border border-white/10 text-sky-400 flex items-center justify-center mb-5">
                 <Target className="w-6 h-6" />
               </div>
               <span className="text-xs font-semibold uppercase tracking-widest text-slate-400">
@@ -187,7 +187,7 @@ export default function SobrePage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-16 sm:py-24 relative border-b border-white/[0.06]">
+      <section className="py-16 sm:py-24 relative border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-2xl mx-auto space-y-4 mb-14">
@@ -208,7 +208,7 @@ export default function SobrePage() {
             {values.map((val, idx) => (
               <div
                 key={val.title}
-                className="rounded-2xl bg-[#141518] border border-white/[0.08] p-5 sm:p-7 hover:border-white/[0.2] transition-all"
+                className="rounded-2xl bg-[#111827] border border-blue-900/40 p-5 sm:p-7 hover:border-blue-800/60 transition-all"
               >
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-xs font-mono font-medium text-blue-400">0{idx + 1}</span>
@@ -239,13 +239,13 @@ export default function SobrePage() {
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
               href="/orcamento"
-              className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-semibold text-black bg-white hover:bg-slate-200 transition-all shadow-lg"
+              className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-semibold text-black bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-lg"
             >
               Pedir Orçamento
             </Link>
             <Link
               href="/solucoes"
-              className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-medium text-slate-300 bg-[#141518] border border-white/[0.08] hover:border-white/[0.2] hover:text-white transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-medium text-slate-300 bg-[#111827] border border-blue-900/40 hover:border-blue-800/60 hover:text-white transition-all"
             >
               Ver Soluções
             </Link>

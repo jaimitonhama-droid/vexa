@@ -9,7 +9,7 @@ export default function FloatingWhatsApp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp com a VEXA"
-      className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 group flex items-center gap-2.5 px-4 py-3 rounded-full bg-[#141518]/95 backdrop-blur-md border border-white/15 hover:border-emerald-500/50 text-white shadow-2xl hover:shadow-emerald-500/10 transition-all hover:scale-[1.02] active:scale-95"
+      className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 group flex items-center gap-2.5 px-4 py-3 rounded-full bg-[#111827]/95 backdrop-blur-md border border-blue-900/40 hover:border-emerald-500/50 text-white shadow-2xl hover:shadow-emerald-500/10 transition-all hover:scale-[1.02] active:scale-95"
     >
       <div className="relative flex items-center justify-center">
         <MessageCircle className="w-4 h-4 text-emerald-400" />

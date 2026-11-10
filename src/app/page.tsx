@@ -11,7 +11,7 @@ import CtaSection from "@/components/home/CtaSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full overflow-hidden bg-[#0C0D0E]">
+    <div className="flex flex-col w-full overflow-hidden bg-[#0A0D14]">
       {/* 1. Hero Section */}
       <HeroSection />
 

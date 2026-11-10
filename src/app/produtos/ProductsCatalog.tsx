@@ -25,7 +25,7 @@ export default function ProductsCatalog() {
           className={`px-5 py-2.5 rounded-full text-xs font-semibold transition-all ${
             activeTab === "all"
               ? "bg-white text-black shadow-lg"
-              : "bg-[#141518] text-slate-400 hover:text-white border border-white/[0.08]"
+              : "bg-[#111827] text-slate-400 hover:text-white border border-blue-900/40"
           }`}
         >
           Todos os Produtos ({productsData.length})
@@ -37,7 +37,7 @@ export default function ProductsCatalog() {
           className={`px-5 py-2.5 rounded-full text-xs font-semibold transition-all flex items-center gap-1.5 ${
             activeTab === "saas"
               ? "bg-blue-600 text-white shadow-lg shadow-blue-600/30"
-              : "bg-[#141518] text-slate-400 hover:text-white border border-white/[0.08]"
+              : "bg-[#111827] text-slate-400 hover:text-white border border-blue-900/40"
           }`}
         >
           <Sparkles className="w-3.5 h-3.5" />
@@ -50,7 +50,7 @@ export default function ProductsCatalog() {
           className={`px-5 py-2.5 rounded-full text-xs font-semibold transition-all flex items-center gap-1.5 ${
             activeTab === "turnkey"
               ? "bg-sky-500 text-black font-bold shadow-lg shadow-sky-500/30"
-              : "bg-[#141518] text-slate-400 hover:text-white border border-white/[0.08]"
+              : "bg-[#111827] text-slate-400 hover:text-white border border-blue-900/40"
           }`}
         >
           <ShoppingBag className="w-3.5 h-3.5" />
@@ -66,7 +66,7 @@ export default function ProductsCatalog() {
           return (
             <div
               key={product.id}
-              className="rounded-3xl bg-[#141518] border border-white/[0.08] p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 hover:border-white/[0.2] hover:shadow-2xl hover:shadow-black/60 group"
+              className="rounded-3xl bg-[#111827] border border-blue-900/40 p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 hover:border-blue-800/60 hover:shadow-2xl hover:shadow-black/60 group"
             >
               <div>
                 {/* Visual Header & Badges */}
@@ -113,7 +113,7 @@ export default function ProductsCatalog() {
                 </p>
 
                 {/* Key Features Preview */}
-                <div className="space-y-2 pt-4 border-t border-white/[0.06] mb-6">
+                <div className="space-y-2 pt-4 border-t border-blue-900/30 mb-6">
                   <span className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider block mb-2">
                     Destaques da Solução:
                   </span>
@@ -127,7 +127,7 @@ export default function ProductsCatalog() {
               </div>
 
               {/* Bottom Section: Pricing indication and CTAs */}
-              <div className="pt-5 border-t border-white/[0.06] space-y-4">
+              <div className="pt-5 border-t border-blue-900/30 space-y-4">
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="text-[10px] uppercase font-mono text-slate-400 block">
@@ -147,14 +147,14 @@ export default function ProductsCatalog() {
                 <div className="grid grid-cols-2 gap-2">
                   <Link
                     href={`/produtos/${product.id}`}
-                    className="flex items-center justify-center py-2.5 px-3 rounded-full text-xs font-semibold text-slate-300 bg-[#0C0D0E] border border-white/[0.08] hover:border-white/[0.2] hover:text-white transition-colors"
+                    className="flex items-center justify-center py-2.5 px-3 rounded-full text-xs font-semibold text-slate-300 bg-[#0A0D14] border border-blue-900/40 hover:border-blue-800/60 hover:text-white transition-colors"
                   >
                     Ver Detalhes
                   </Link>
 
                   <Link
                     href={`/orcamento?produto=${encodeURIComponent(product.name)}`}
-                    className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full text-xs font-semibold text-black bg-white hover:bg-slate-200 transition-all shadow-md"
+                    className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full text-xs font-semibold text-black bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-md"
                   >
                     <span>{isTurnkey ? "Adquirir" : "Aderir"}</span>
                     <ArrowRight className="w-3.5 h-3.5" />

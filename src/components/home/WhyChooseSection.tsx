@@ -33,7 +33,7 @@ const pillars = [
 
 export default function WhyChooseSection() {
   return (
-    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0C0D0E] border-t border-white/[0.06]">
+    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0A0D14] border-t border-blue-900/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -61,7 +61,7 @@ export default function WhyChooseSection() {
             return (
               <div
                 key={pillar.number}
-                className="group relative rounded-2xl bg-[#141518] border border-white/[0.08] p-4 sm:p-7 hover:border-white/[0.2] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black flex flex-col justify-between"
+                className="group relative rounded-2xl bg-[#111827] border border-blue-900/40 p-4 sm:p-7 hover:border-blue-800/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black flex flex-col justify-between"
               >
                 <div>
                   {/* Top Bar with Number and Icon */}
@@ -69,7 +69,7 @@ export default function WhyChooseSection() {
                     <span className="font-mono text-base sm:text-2xl font-bold text-white/30 group-hover:text-white/60 transition-colors">
                       {pillar.number}
                     </span>
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl border border-white/[0.1] bg-white/[0.04] text-white flex items-center justify-center">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl border border-blue-900/50 bg-white/[0.04] text-white flex items-center justify-center">
                       <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#F8FAFC]" />
                     </div>
                   </div>
@@ -86,7 +86,7 @@ export default function WhyChooseSection() {
                 </div>
 
                 {/* Subtle bottom indicator */}
-                <div className="mt-4 sm:mt-8 pt-3 border-t border-white/[0.06] flex items-center gap-1.5 sm:gap-2">
+                <div className="mt-4 sm:mt-8 pt-3 border-t border-blue-900/30 flex items-center gap-1.5 sm:gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                   <span className="text-[10px] sm:text-[11px] font-mono text-[#94A3B8]">Pilar Fundamental</span>
                 </div>

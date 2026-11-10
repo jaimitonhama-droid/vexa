@@ -28,7 +28,7 @@ export default function ProjectsGallery() {
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all ${
               activeCategory === cat
                 ? "bg-white text-black shadow-md"
-                : "bg-[#141518] text-slate-400 hover:text-white border border-white/[0.08]"
+                : "bg-[#111827] text-slate-400 hover:text-white border border-blue-900/40"
             }`}
           >
             {cat}
@@ -45,14 +45,14 @@ export default function ProjectsGallery() {
             <div
               key={project.id}
               id={project.id}
-              className={`group rounded-3xl bg-[#141518] border overflow-hidden flex flex-col justify-between transition-all duration-300 hover:border-white/[0.2] hover:shadow-2xl hover:shadow-black/60 ${
+              className={`group rounded-3xl bg-[#111827] border overflow-hidden flex flex-col justify-between transition-all duration-300 hover:border-blue-800/60 hover:shadow-2xl hover:shadow-black/60 ${
                 isRealProject
                   ? "border-emerald-500/30"
-                  : "border-white/[0.08]"
+                  : "border-blue-900/40"
               }`}
             >
               {/* Visual Header / Thumbnail */}
-              <div className="relative h-44 sm:h-56 bg-[#0C0D0E] flex items-center justify-center overflow-hidden border-b border-white/[0.06]">
+              <div className="relative h-44 sm:h-56 bg-[#0A0D14] flex items-center justify-center overflow-hidden border-b border-blue-900/30">
                 {project.imageUrl ? (
                   <div className="relative w-full h-full">
                     <Image
@@ -61,11 +61,11 @@ export default function ProjectsGallery() {
                       fill
                       className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#141518]/80 via-transparent to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#111827]/80 via-transparent to-transparent pointer-events-none" />
                   </div>
                 ) : (
-                  <div className="relative z-10 w-full max-w-xs rounded-2xl bg-[#1A1B20] border border-white/[0.08] p-4 shadow-lg group-hover:scale-105 transition-transform">
-                    <div className="flex items-center justify-between pb-2 mb-2 border-b border-white/[0.06]">
+                  <div className="relative z-10 w-full max-w-xs rounded-2xl bg-[#1E2638] border border-blue-900/40 p-4 shadow-lg group-hover:scale-105 transition-transform">
+                    <div className="flex items-center justify-between pb-2 mb-2 border-b border-blue-900/30">
                       <div className="flex items-center gap-1.5">
                         <div className="w-2 h-2 rounded-full bg-white/20" />
                         <div className="w-2 h-2 rounded-full bg-white/20" />
@@ -82,7 +82,7 @@ export default function ProjectsGallery() {
                   className={`absolute top-3 right-3 z-20 text-[9px] font-mono font-medium px-2.5 py-1 rounded-full shadow-md border ${
                     isRealProject
                       ? "bg-emerald-950/90 text-emerald-400 border-emerald-500/40"
-                      : "bg-[#0C0D0E]/90 text-slate-400 border-white/[0.08]"
+                      : "bg-[#0A0D14]/90 text-slate-400 border-blue-900/40"
                   }`}
                 >
                   {project.tag}
@@ -108,7 +108,7 @@ export default function ProjectsGallery() {
                   </p>
 
                   {/* Deliverables */}
-                  <div className="space-y-1.5 pt-3 border-t border-white/[0.06] mb-4">
+                  <div className="space-y-1.5 pt-3 border-t border-blue-900/30 mb-4">
                     <span className="text-[10px] font-semibold text-slate-300 uppercase tracking-wider block">
                       Entregáveis:
                     </span>
@@ -122,12 +122,12 @@ export default function ProjectsGallery() {
                 </div>
 
                 {/* Technologies & CTA */}
-                <div className="pt-3 border-t border-white/[0.06] space-y-3">
+                <div className="pt-3 border-t border-blue-900/30 space-y-3">
                   <div className="flex flex-wrap gap-1.5">
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-[#0C0D0E] border border-white/[0.06] text-slate-400"
+                        className="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-[#0A0D14] border border-blue-900/30 text-slate-400"
                       >
                         {tech}
                       </span>
@@ -148,7 +148,7 @@ export default function ProjectsGallery() {
                     ) : (
                       <Link
                         href={`/orcamento?projeto=${encodeURIComponent(project.title)}`}
-                        className="flex items-center justify-center gap-1 py-2.5 px-3 rounded-full text-xs font-semibold text-slate-300 bg-[#0C0D0E] border border-white/[0.08] hover:border-white/[0.2] hover:text-white transition-colors"
+                        className="flex items-center justify-center gap-1 py-2.5 px-3 rounded-full text-xs font-semibold text-slate-300 bg-[#0A0D14] border border-blue-900/40 hover:border-blue-800/60 hover:text-white transition-colors"
                       >
                         <span>Detalhes</span>
                         <ArrowUpRight className="w-3 h-3" />
@@ -157,7 +157,7 @@ export default function ProjectsGallery() {
 
                     <Link
                       href={`/orcamento?projeto=${encodeURIComponent(project.title)}`}
-                      className="flex items-center justify-center gap-1 py-2.5 px-3 rounded-full text-xs font-semibold text-black bg-white hover:bg-slate-200 transition-all shadow-md"
+                      className="flex items-center justify-center gap-1 py-2.5 px-3 rounded-full text-xs font-semibold text-black bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-md"
                     >
                       <span>Orçamento</span>
                       <ArrowUpRight className="w-3 h-3" />

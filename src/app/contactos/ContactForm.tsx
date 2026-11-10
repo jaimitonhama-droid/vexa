@@ -66,7 +66,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="rounded-3xl bg-[#141518] border border-white/[0.08] p-5 sm:p-10 shadow-2xl relative overflow-hidden">
+    <div className="rounded-3xl bg-[#111827] border border-blue-900/40 p-5 sm:p-10 shadow-2xl relative overflow-hidden">
       
       {status === "success" ? (
         <div className="py-12 text-center space-y-6">
@@ -105,7 +105,7 @@ export default function ContactForm() {
                   message: "",
                 });
               }}
-              className="px-6 py-3 rounded-full text-xs font-semibold text-slate-300 bg-[#0C0D0E] border border-white/[0.1] hover:border-white/[0.2] transition-colors"
+              className="px-6 py-3 rounded-full text-xs font-semibold text-slate-300 bg-[#0A0D14] border border-blue-900/50 hover:border-blue-800/60 transition-colors"
             >
               Enviar Outra Mensagem
             </button>
@@ -135,7 +135,7 @@ export default function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Ex: Seu Nome"
-                className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#0C0D0E] border border-white/[0.08] focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-xs sm:text-sm text-white placeholder-slate-500 outline-none transition-all"
+                className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#0A0D14] border border-blue-900/40 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-xs sm:text-sm text-white placeholder-slate-500 outline-none transition-all"
               />
             </div>
 
@@ -152,7 +152,7 @@ export default function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="seu@email.com"
-                className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#0C0D0E] border border-white/[0.08] focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-xs sm:text-sm text-white placeholder-slate-500 outline-none transition-all"
+                className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#0A0D14] border border-blue-900/40 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-xs sm:text-sm text-white placeholder-slate-500 outline-none transition-all"
               />
             </div>
           </div>
@@ -170,7 +170,7 @@ export default function ContactForm() {
                 value={formData.company}
                 onChange={handleChange}
                 placeholder="Nome da empresa"
-                className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#0C0D0E] border border-white/[0.08] focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-xs sm:text-sm text-white placeholder-slate-500 outline-none transition-all"
+                className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#0A0D14] border border-blue-900/40 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-xs sm:text-sm text-white placeholder-slate-500 outline-none transition-all"
               />
             </div>
 
@@ -184,7 +184,7 @@ export default function ContactForm() {
                 name="serviceType"
                 value={formData.serviceType}
                 onChange={handleChange}
-                className="w-full px-2.5 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#0C0D0E] border border-white/[0.08] focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-xs sm:text-sm text-white outline-none transition-all cursor-pointer truncate"
+                className="w-full px-2.5 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#0A0D14] border border-blue-900/40 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-xs sm:text-sm text-white outline-none transition-all cursor-pointer truncate"
               >
                 <option value="Geral">Contacto Geral</option>
                 <option value="Aquisição de Site Pronto (Wandra, Lara Fashion, MYRO, XFLIX)">Site Pronto (Turnkey)</option>
@@ -209,7 +209,7 @@ export default function ContactForm() {
               value={formData.subject}
               onChange={handleChange}
               placeholder="Ex: Aquisição de plataforma ou proposta comercial"
-              className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#0C0D0E] border border-white/[0.08] focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-xs sm:text-sm text-white placeholder-slate-500 outline-none transition-all"
+              className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#0A0D14] border border-blue-900/40 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-xs sm:text-sm text-white placeholder-slate-500 outline-none transition-all"
             />
           </div>
 
@@ -226,7 +226,7 @@ export default function ContactForm() {
               value={formData.message}
               onChange={handleChange}
               placeholder="Descreva em detalhe os requisitos ou o projeto pretendido..."
-              className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#0C0D0E] border border-white/[0.08] focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-xs sm:text-sm text-white placeholder-slate-500 outline-none transition-all resize-none"
+              className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#0A0D14] border border-blue-900/40 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-xs sm:text-sm text-white placeholder-slate-500 outline-none transition-all resize-none"
             />
           </div>
 
@@ -234,7 +234,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full text-sm font-semibold text-black bg-white hover:bg-slate-200 disabled:opacity-50 transition-all cursor-pointer shadow-lg"
+            className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full text-sm font-semibold text-black bg-blue-600 hover:bg-blue-500 text-white disabled:opacity-50 transition-all cursor-pointer shadow-lg"
           >
             {status === "loading" ? (
               <span>A preparar WhatsApp...</span>

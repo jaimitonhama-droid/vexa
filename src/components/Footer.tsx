@@ -4,7 +4,7 @@ import { ArrowUpRight, Mail, Globe, Code2, ShieldCheck, Sparkles, MessageSquare,
 
 export default function Footer() {
   return (
-    <footer className="bg-[#08090A] border-t border-white/[0.08] relative overflow-hidden">
+    <footer className="bg-[#060810] border-t border-blue-900/40 relative overflow-hidden">
       {/* Subtle top divider line */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-white/[0.1] to-transparent pointer-events-none" />
 
@@ -13,8 +13,8 @@ export default function Footer() {
           {/* Brand Column (2 cols wide on lg) */}
           <div className="lg:col-span-2 space-y-5">
             <Link href="/" className="flex items-center gap-3 inline-block">
-              <div className="w-10 h-10 rounded-xl bg-[#141518] border border-white/[0.12] flex items-center justify-center p-[2px] shadow-sm overflow-hidden">
-                <div className="w-full h-full bg-[#0C0D0E] rounded-[10px] flex items-center justify-center overflow-hidden p-1">
+              <div className="w-10 h-10 rounded-xl bg-[#111827] border border-white/[0.12] flex items-center justify-center p-[2px] shadow-sm overflow-hidden">
+                <div className="w-full h-full bg-[#0A0D14] rounded-[10px] flex items-center justify-center overflow-hidden p-1">
                   <Image
                     src="/images/vexa-logo.png"
                     alt="VEXA Technology Group Logo"
@@ -52,7 +52,7 @@ export default function Footer() {
               <Link
                 href="/contactos"
                 aria-label="Contactar VEXA"
-                className="w-9 h-9 rounded-full bg-[#141518] border border-white/[0.08] flex items-center justify-center text-[#94A3B8] hover:text-white hover:border-white/[0.25] transition-all"
+                className="w-9 h-9 rounded-full bg-[#111827] border border-blue-900/40 flex items-center justify-center text-[#94A3B8] hover:text-white hover:border-white/[0.25] transition-all"
               >
                 <Mail className="w-4 h-4" />
               </Link>
@@ -156,7 +156,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 mt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#9298AA]">
+        <div className="pt-8 mt-8 border-t border-blue-900/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#9298AA]">
           <p>© 2026 VEXA Technology Group. Todos os direitos reservados.</p>
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5 text-emerald-400/90 font-medium">

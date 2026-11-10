@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 export default function ProdutosPage() {
   return (
-    <div className="flex flex-col w-full overflow-hidden bg-[#0C0D0E]">
+    <div className="flex flex-col w-full overflow-hidden bg-[#0A0D14]">
       
       {/* Hero Header */}
-      <section className="relative py-16 sm:py-24 overflow-hidden border-b border-white/[0.06]">
+      <section className="relative py-16 sm:py-24 overflow-hidden border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-5">
             <div className="inline-flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
@@ -54,7 +54,7 @@ export default function ProdutosPage() {
       </section>
 
       {/* Products Interactive Catalog */}
-      <section className="py-14 sm:py-20 relative border-b border-white/[0.06]">
+      <section className="py-14 sm:py-20 relative border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ProductsCatalog />
         </div>
@@ -72,7 +72,7 @@ export default function ProdutosPage() {
           <div className="pt-2">
             <Link
               href="/orcamento"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-semibold text-black bg-white hover:bg-slate-200 transition-all shadow-lg"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-semibold text-black bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-lg"
             >
               <span>Solicitar Projeto Sob Medida</span>
             </Link>

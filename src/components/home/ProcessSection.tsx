@@ -33,7 +33,7 @@ const steps = [
 
 export default function ProcessSection() {
   return (
-    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0C0D0E] border-t border-white/[0.06]">
+    <section className="py-14 sm:py-24 relative overflow-hidden bg-[#0A0D14] border-t border-blue-900/30">
       {/* Subtle top divider line */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-white/[0.08] to-transparent pointer-events-none" />
 
@@ -68,15 +68,15 @@ export default function ProcessSection() {
               return (
                 <div
                   key={item.step}
-                  className="w-[82vw] max-w-[300px] md:w-auto md:max-w-none shrink-0 snap-center group relative rounded-2xl bg-[#141518] border border-white/[0.08] p-5 sm:p-7 flex flex-col justify-between hover:border-white/[0.2] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black"
+                  className="w-[82vw] max-w-[300px] md:w-auto md:max-w-none shrink-0 snap-center group relative rounded-2xl bg-[#111827] border border-blue-900/40 p-5 sm:p-7 flex flex-col justify-between hover:border-blue-800/60 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black"
                 >
                   <div>
                     {/* Step badge & icon */}
                     <div className="flex items-center justify-between mb-4 sm:mb-6">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#0C0D0E] border border-white/[0.1] flex items-center justify-center text-white group-hover:scale-105 transition-transform shadow-sm">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#0A0D14] border border-blue-900/50 flex items-center justify-center text-white group-hover:scale-105 transition-transform shadow-sm">
                         <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#F8FAFC]" />
                       </div>
-                      <span className="font-mono text-xs font-bold text-white bg-white/[0.08] px-2.5 py-1 rounded-full border border-white/[0.1]">
+                      <span className="font-mono text-xs font-bold text-white bg-white/[0.08] px-2.5 py-1 rounded-full border border-blue-900/50">
                         Passo {item.step}
                       </span>
                     </div>
@@ -98,7 +98,7 @@ export default function ProcessSection() {
                   </div>
 
                   {/* Bottom indicator */}
-                  <div className="mt-4 sm:mt-6 pt-3 border-t border-white/[0.06] flex items-center justify-between text-xs text-[#94A3B8]">
+                  <div className="mt-4 sm:mt-6 pt-3 border-t border-blue-900/30 flex items-center justify-between text-xs text-[#94A3B8]">
                     <span className="font-mono text-[10px] sm:text-[11px]">Etapa 0{index + 1} de 04</span>
                     {index < 3 && (
                       <ArrowRight className="w-3.5 h-3.5 text-white/40 hidden lg:block" />

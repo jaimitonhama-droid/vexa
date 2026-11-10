@@ -30,7 +30,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-20 sm:py-24 relative overflow-hidden bg-[#0C0D0E] border-t border-white/[0.06]">
+    <section className="py-20 sm:py-24 relative overflow-hidden bg-[#0A0D14] border-t border-blue-900/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
           {testimonials.map((item, idx) => (
             <div
               key={idx}
-              className="rounded-3xl bg-[#141518] border border-white/[0.08] p-7 flex flex-col justify-between space-y-6 hover:border-white/[0.18] transition-all"
+              className="rounded-3xl bg-[#111827] border border-blue-900/40 p-7 flex flex-col justify-between space-y-6 hover:border-white/[0.18] transition-all"
             >
               <div className="space-y-4">
                 {/* 5 Stars */}
@@ -75,9 +75,9 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Author Info */}
-              <div className="flex items-center justify-between pt-4 border-t border-white/[0.06]">
+              <div className="flex items-center justify-between pt-4 border-t border-blue-900/30">
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-[#1A1B20] border border-white/10 flex items-center justify-center text-xs font-bold text-white">
+                  <div className="w-9 h-9 rounded-full bg-[#1E2638] border border-white/10 flex items-center justify-center text-xs font-bold text-white">
                     {item.initials}
                   </div>
                   <div>
@@ -103,7 +103,7 @@ export default function TestimonialsSection() {
         <div className="flex justify-center">
           <Link
             href="/contactos"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-semibold text-white bg-[#141518] border border-white/15 hover:bg-[#1A1B20] hover:border-white/30 transition-all shadow-md"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-semibold text-white bg-[#111827] border border-blue-900/40 hover:bg-[#1E2638] hover:border-blue-800/60 transition-all shadow-md"
           >
             <span>Falar com os Nossos Especialistas</span>
           </Link>

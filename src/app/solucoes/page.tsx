@@ -137,10 +137,10 @@ const services = [
 
 export default function SolucoesPage() {
   return (
-    <div className="flex flex-col w-full overflow-hidden bg-[#0C0D0E]">
+    <div className="flex flex-col w-full overflow-hidden bg-[#0A0D14]">
       
       {/* Hero Section */}
-      <section className="relative py-16 sm:py-24 overflow-hidden border-b border-white/[0.06]">
+      <section className="relative py-16 sm:py-24 overflow-hidden border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-5">
             <div className="inline-flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
@@ -165,7 +165,7 @@ export default function SolucoesPage() {
               {["Websites", "Aplicações Web", "E-commerce", "Sistemas Sob Medida", "Cloud & Suporte"].map((item) => (
                 <span
                   key={item}
-                  className="text-xs px-3.5 py-1 rounded-full bg-[#141518] border border-white/[0.08] text-slate-300"
+                  className="text-xs px-3.5 py-1 rounded-full bg-[#111827] border border-blue-900/40 text-slate-300"
                 >
                   {item}
                 </span>
@@ -176,7 +176,7 @@ export default function SolucoesPage() {
       </section>
 
       {/* Services Detailed List */}
-      <section className="py-12 sm:py-20 relative border-b border-white/[0.06]">
+      <section className="py-12 sm:py-20 relative border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
           
           {services.map((service, index) => {
@@ -187,7 +187,7 @@ export default function SolucoesPage() {
               <div
                 key={service.id}
                 id={service.id}
-                className="rounded-3xl bg-[#141518] border border-white/[0.08] p-6 sm:p-10 transition-all hover:border-white/[0.18] shadow-2xl relative overflow-hidden"
+                className="rounded-3xl bg-[#111827] border border-blue-900/40 p-6 sm:p-10 transition-all hover:border-white/[0.18] shadow-2xl relative overflow-hidden"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                   
@@ -221,7 +221,7 @@ export default function SolucoesPage() {
                         {service.benefits.map((benefit, bIdx) => (
                           <div
                             key={bIdx}
-                            className="flex items-start gap-2.5 p-3 rounded-xl bg-[#0C0D0E] border border-white/[0.04] text-xs text-slate-300"
+                            className="flex items-start gap-2.5 p-3 rounded-xl bg-[#0A0D14] border border-blue-900/20 text-xs text-slate-300"
                           >
                             <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
                             <span>{benefit}</span>
@@ -231,7 +231,7 @@ export default function SolucoesPage() {
                     </div>
 
                     {/* Development Process */}
-                    <div className="p-4 rounded-xl bg-[#0C0D0E] border border-white/[0.06]">
+                    <div className="p-4 rounded-xl bg-[#0A0D14] border border-blue-900/30">
                       <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">
                         Processo de Desenvolvimento:
                       </span>
@@ -244,7 +244,7 @@ export default function SolucoesPage() {
                     <div className="pt-2">
                       <Link
                         href={`/orcamento?servico=${encodeURIComponent(service.title)}`}
-                        className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-semibold text-black bg-white hover:bg-slate-200 transition-all shadow-lg"
+                        className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-semibold text-black bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-lg"
                       >
                         <span>Solicitar Orçamento para {service.title}</span>
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -255,8 +255,8 @@ export default function SolucoesPage() {
 
                   {/* Visual Side Card */}
                   <div className={`lg:col-span-5 ${isEven ? "" : "lg:order-1"}`}>
-                    <div className="rounded-2xl bg-[#0C0D0E] border border-white/[0.08] p-6 sm:p-7 space-y-4">
-                      <div className="flex items-center justify-between pb-3 border-b border-white/[0.06]">
+                    <div className="rounded-2xl bg-[#0A0D14] border border-blue-900/40 p-6 sm:p-7 space-y-4">
+                      <div className="flex items-center justify-between pb-3 border-b border-blue-900/30">
                         <span className="text-xs font-mono text-slate-400">
                           vexa.{service.id}.config
                         </span>
@@ -266,18 +266,18 @@ export default function SolucoesPage() {
                       </div>
 
                       <div className="space-y-2 text-xs font-mono text-slate-400">
-                        <div className="p-2.5 rounded-lg bg-[#141518] border border-white/[0.04]">
+                        <div className="p-2.5 rounded-lg bg-[#111827] border border-blue-900/20">
                           <span className="text-blue-400">divisão:</span> &quot;{service.category}&quot;
                         </div>
-                        <div className="p-2.5 rounded-lg bg-[#141518] border border-white/[0.04]">
+                        <div className="p-2.5 rounded-lg bg-[#111827] border border-blue-900/20">
                           <span className="text-sky-400">padrão_entrega:</span> &quot;Engenharia de precisão&quot;
                         </div>
-                        <div className="p-2.5 rounded-lg bg-[#141518] border border-white/[0.04]">
+                        <div className="p-2.5 rounded-lg bg-[#111827] border border-blue-900/20">
                           <span className="text-emerald-400">suporte:</span> &quot;Acompanhamento VEXA&quot;
                         </div>
                       </div>
 
-                      <div className="pt-2 border-t border-white/[0.06] text-xs text-slate-400 flex items-center justify-between">
+                      <div className="pt-2 border-t border-blue-900/30 text-xs text-slate-400 flex items-center justify-between">
                         <span>Padrão Internacional</span>
                         <Sparkles className="w-4 h-4 text-blue-400" />
                       </div>
@@ -304,7 +304,7 @@ export default function SolucoesPage() {
           <div className="pt-2">
             <Link
               href="/orcamento"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-semibold text-black bg-white hover:bg-slate-200 shadow-xl transition-all"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-semibold text-black bg-blue-600 hover:bg-blue-500 text-white shadow-xl transition-all"
             >
               <span>Solicitar Orçamento Sem Compromisso</span>
               <ArrowRight className="w-4 h-4" />
